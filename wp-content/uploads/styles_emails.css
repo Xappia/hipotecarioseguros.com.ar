@@ -1,0 +1,473 @@
+/* ------------------------------------- 
+		GLOBAL 
+------------------------------------- */
+* { 
+	margin:0;
+	padding:0;
+}
+* { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+img { 
+	max-width: 100%; 
+}
+.collapse {
+	margin:0;
+	padding:0;
+}
+body {
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:none; 
+	width: 100%!important; 
+	height: 100%;
+	margin-bottom:15px;
+}
+
+
+
+/* ------------------------------------- 
+		ELEMENTS 
+------------------------------------- */
+a { color: #2BA6CB;}
+
+button::-moz-focus-inner { border: 0; } /* Para Firefox */
+
+.a_demo_four {
+	background-color:#00accd;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	padding-right:50px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #00c7e2, 0px 5px 0px 0px #00899b, 0px 10px 5px #999;
+}
+
+.a_demo_four:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+	box-shadow: inset 0px 1px 0px #00c7e2, 0px 2px 0px 0px #00899b, 0px 5px 3px #999;
+}
+
+.a_demo_four::before {
+	background-color:#00899b;
+	background-image:url(right_arrow.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	content:"";
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-9px;
+	border-radius: 50%;
+	box-shadow: inset 0px 1px 0px #19120f, 0px 1px 0px #00c7e2;
+}
+
+.a_demo_four:active::before {
+	top:50%;
+	margin-top:-12px;
+	box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #00accd;
+}
+
+.a_demo_five {
+	background-color:#00accd;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	padding-right:50px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #00c7e2, 0px 5px 0px 0px #00899b, 0px 10px 5px #999;
+}
+
+.a_demo_five:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+	box-shadow: inset 0px 1px 0px #00c7e2, 0px 2px 0px 0px #00899b, 0px 5px 3px #999;
+}
+
+.a_demo_five::before {
+	background-color:#00899b;
+	background-image:url(left_arrow.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	content:"";
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-9px;
+	border-radius: 50%;
+	box-shadow: inset 0px 1px 0px #19120f, 0px 1px 0px #00c7e2;
+}
+
+.a_demo_five:active::before {
+	top:50%;
+	margin-top:-12px;
+	box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #00accd;
+}
+
+
+.a_demo_one {
+	background-color:#00accd;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	padding-right:50px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #00c7e2, 0px 5px 0px 0px #00899b, 0px 10px 5px #999;
+}
+
+.a_demo_one:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+	box-shadow: inset 0px 1px 0px #00c7e2, 0px 2px 0px 0px #00899b, 0px 5px 3px #999;
+}
+
+.a_demo_one::before {
+	background-color:#00899b;
+	background-image:url(arrow.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	content:"";
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-9px;
+	border-radius: 50%;
+	box-shadow: inset 0px 1px 0px #19120f, 0px 1px 0px #00c7e2;
+}
+
+.a_demo_one:active::before {
+	top:50%;
+	margin-top:-12px;
+	box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #00accd;
+}
+
+
+.a_demo_actualizar {
+	background-color:#00accd;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:5px 10px;
+	padding-right:50px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #00c7e2, 0px 5px 0px 0px #00899b, 0px 10px 5px #999;
+}
+
+.a_demo_actualizar:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+	box-shadow: inset 0px 1px 0px #00c7e2, 0px 2px 0px 0px #00899b, 0px 5px 3px #999;
+}
+
+.a_demo_actualizar::before {
+	background-color:#00899b;
+	background-image:url(arrow.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	content:"";
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-9px;
+	border-radius: 50%;
+	box-shadow: inset 0px 1px 0px #19120f, 0px 1px 0px #00c7e2;
+}
+
+.a_demo_actualizar:active::before {
+	top:50%;
+	margin-top:-12px;
+	box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #00accd;
+}
+
+
+ .boton3d{
+        border:0;
+      color: #668428;
+        font-size: 18px;
+        font-family:sans-serif;
+        padding: 15px 20px;
+      background: -moz-linear-gradient(center top , #00accd 0%, #96d0af 100%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00accd), color-stop(100%,#96d0af));
+      -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+      text-shadow: 1px 1px 1px #E1FEA6;
+      -moz-box-shadow: 0px 6px 0 #819F45;
+        -webkit-box-shadow: 0px 6px 0 #819F45;
+
+    }
+
+.btn2 {
+	text-decoration:none;
+	color: #FFF;
+	background-color: #666;
+	padding:10px 16px;
+	font-weight:bold;
+	margin-right:10px;
+	text-align:center;
+	cursor:pointer;
+	display: inline-block;
+}
+
+p.callout {
+	padding:15px;
+	background-color:#ECF8FF;
+	margin-bottom: 15px;
+}
+.callout a {
+	font-weight:bold;
+	color: #2BA6CB;
+}
+
+table.social {
+/* 	padding:15px; */
+	background-color: #ebebeb;
+	
+}
+.social .soc-btn {
+	padding: 3px 7px;
+	font-size:12px;
+	margin-bottom:10px;
+	text-decoration:none;
+	color: #FFF;font-weight:bold;
+	display:block;
+	text-align:center;
+}
+a.fb { background-color: #3B5998!important; }
+a.tw { background-color: #1daced!important; }
+a.gp { background-color: #DB4A39!important; }
+a.ms { background-color: #000!important; }
+
+.sidebar .soc-btn { 
+	display:block;
+	width:100%;
+}
+
+/* ------------------------------------- 
+		HEADER 
+------------------------------------- */
+table.head-wrap { width: 100%; 	
+background: rgba(0,173,203,1);
+background: -moz-linear-gradient(left, rgba(0,173,203,1) 0%, rgba(152,207,175,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,173,203,1)), color-stop(100%, rgba(152,207,175,1)));
+background: -webkit-linear-gradient(left, rgba(0,173,203,1) 0%, rgba(152,207,175,1) 100%);
+background: -o-linear-gradient(left, rgba(0,173,203,1) 0%, rgba(152,207,175,1) 100%);
+background: -ms-linear-gradient(left, rgba(0,173,203,1) 0%, rgba(152,207,175,1) 100%);
+background: linear-gradient(to right, rgba(0,173,203,1) 0%, rgba(152,207,175,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00adcb', endColorstr='#98cfaf', GradientType=1 );
+}
+
+.header.container table td.logo { padding: 15px; }
+.header.container table td.label { padding: 15px; padding-left:0px;}
+
+
+
+
+/* ------------------------------------- 
+		BODY 
+------------------------------------- */
+table.body-wrap { width: 100%; 	margin-top:15px; }
+
+
+/* ------------------------------------- 
+		FOOTER 
+------------------------------------- */
+table.footer-wrap { width: 100%;	clear:both!important;
+}
+.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
+.footer-wrap .container td.content p {
+	font-size:10px;
+	font-weight: bold;
+	
+}
+
+
+/* ------------------------------------- 
+		TYPOGRAPHY 
+------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#666;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; text-transform: none; }
+
+h1 { font-weight:200; font-size: 34px;}
+h2 { font-weight:200; font-size: 37px;}
+h3 { font-weight:500; font-size: 27px;}
+h4 { font-weight:500; font-size: 23px;}
+h5 { font-weight:900; font-size: 17px;}
+h6 { font-weight:900; font-size: 14px; text-transform: uppercase; color:#444;}
+
+.collapse { margin:0!important;}
+
+p, ul { 
+	margin-bottom: 10px; 
+	font-weight: normal; 
+	font-size:14px; 
+	line-height:1.6;
+}
+p.lead { font-size:14px; color:#666;}
+p.last { margin-bottom:0px;}
+
+ul li {
+	margin-left:5px;
+	list-style-position: inside;
+}
+
+/* ------------------------------------- 
+		SIDEBAR 
+------------------------------------- */
+ul.sidebar {
+	background:#ebebeb;
+	display:block;
+	list-style-type: none;
+}
+ul.sidebar li { display: block; margin:0;}
+ul.sidebar li a {
+	text-decoration:none;
+	color: #666;
+	padding:10px 16px;
+/* 	font-weight:bold; */
+	margin-right:10px;
+/* 	text-align:center; */
+	cursor:pointer;
+	border-bottom: 1px solid #777777;
+	border-top: 1px solid #FFFFFF;
+	display:block;
+	margin:0;
+}
+ul.sidebar li a.last { border-bottom-width:0px;}
+ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.sidebar li a h5,ul.sidebar li a h6,ul.sidebar li a p { margin-bottom:0!important;}
+
+
+
+/* --------------------------------------------------- 
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure. 
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display:block!important;
+	max-width:600px!important;
+	margin:0 auto!important; /* makes it centered */
+	clear:both!important;
+}
+
+/* borde degrade */
+.yy {
+  color:#666;
+  padding: 0px 20px 10px 20px;
+  max-width: 600px;
+  height: 100%;
+  border-left: 10px solid #00accd;
+  border-right: 10px solid #96d0af;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100% ;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 10px;
+  -moz-background-size: 100% 10px;
+  background-size: 100% 10px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+  background-image: -webkit-linear-gradient(left, #00accd 0%, #96d0af 100%), -webkit-linear-gradient(left, #00accd 0%, #96d0af 100%);
+  background-image: -moz-linear-gradient(left, #00accd 0%, #96d0af 100%), -moz-linear-gradient(left, #00accd 0%, #96d0af 100%);
+  background-image: -o-linear-gradient(left, #00accd 0%, #96d0af 100%), -o-linear-gradient(left, #00accd 0%, #96d0af 100%);
+  background-image: linear-gradient(to right, #00accd 0%, #96d0af 100%), linear-gradient(to right, #00accd 0%, #96d0af 100%);
+}
+
+/* caja degrade */
+.xx {
+  color:#666;
+  padding: 10px 20px 10px 20px;
+  max-width: 600px;
+  height: 100%;
+  border-left: 10px;
+  border-right: 10px;
+  background-position: 0 0, 0 100% ;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 10px;
+  -moz-background-size: 100% 10px;
+  background-size: 100% 10px;
+  background: rgba(0,172,205,1);
+background: -moz-linear-gradient(45deg, rgba(0,172,205,1) 0%, rgba(150,208,175,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,172,205,1)), color-stop(100%, rgba(150,208,175,1)));
+background: -webkit-linear-gradient(45deg, rgba(0,172,205,1) 0%, rgba(150,208,175,1) 100%);
+background: -o-linear-gradient(45deg, rgba(0,172,205,1) 0%, rgba(150,208,175,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,172,205,1) 0%, rgba(150,208,175,1) 100%);
+background: linear-gradient(45deg, rgba(0,172,205,1) 0%, rgba(150,208,175,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00accd', endColorstr='#96d0af', GradientType=1 );
+}
+
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	padding:25px;
+	max-width:600px;
+	margin:0 auto;
+	display:block; 
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+
+
+/* Odds and ends */
+.column {
+	float:left;
+}
+.column tr td { padding: 15px; }
+.column-wrap { 
+	padding:0!important; 
+	margin:0 auto; 
+	max-width:600px!important;
+}
+.column table { width:100%;}
+.social .column {
+	width: 100px;
+	min-width: 99px;
+	float:left;
+}
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear { display: block; clear: both; }
+
+
+/* ------------------------------------------- 
+		PHONE
+		For clients that support media queries.
+		Nothing fancy. 
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+	
+	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
+
+	div[class="column"] { width: auto!important; float:none!important;}
+	
+	table.social div[class="column"] {
+		width:auto!important;
+	}
+
+}
+

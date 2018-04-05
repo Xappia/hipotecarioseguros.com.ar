@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- copyright devn.co (c) All Rights Reserved -->
+<!-- @author: devn -->
+<!-- @email: contact@devn.co -->
+<!-- @package: Layout + Cache -->
+<layout>
+	<title>Footer</title>
+	<type>groups</type>
+	<id>footer</id>
+	<blockHeight>650</blockHeight>
+	<height>700</height>
+	<private>no</private>
+	<update>Mon, 30 May 16 14:45:24 +0000</update>
+	<css><![CDATA[.blkfooterdevn0{min-height:200px;width:100% !important;margin-left:0% !important;}.blkfooterdevn1{min-height:80px;width:100% !important;margin-left:0% !important;}.blkfooterdevn2{min-height:220px;width:100% !important;margin-left:0% !important;}.blkfooterdevn3{min-height:220px;width:100% !important;margin-left:0% !important;}.blkfooterdevn4{min-height:220px;width:100% !important;margin-left:0% !important;}.blkfooterdevn5{min-height:220px;width:100% !important;margin-left:0% !important;}.blkfooterdevn6{min-height:110px;width:100% !important;margin-left:0% !important;}]]></css>
+	<groups></groups>
+	<customHeader><![CDATA[]]></customHeader>
+	<customFooter><![CDATA[]]></customFooter>
+	<groupid><![CDATA[]]></groupid>
+	<groupclass><![CDATA[footer1]]></groupclass>
+	<vitual><![CDATA[[{"id":0,"sid":"devn_customize__grp_footer_1415061119","customize":"","custLabel":"Newsletter","cfg":{"className":"one_half last animate","fullWidth":"0","status":"unpublish","customCss":""},"height":200,"width":460,"top":0,"left":20,"bottom":200,"right":480},{"id":1,"sid":"devn_customize__grp_footer_1418664149","customize":"","custLabel":"Code Customization","cfg":{"className":"","fullWidth":"0","status":"publish","customCss":""},"height":80,"width":940,"top":210,"left":20,"bottom":290,"right":960},{"id":2,"sid":"devn_customize__grp_footer_1416333480","customize":"","custLabel":"Mosaico Productos","cfg":{"className":"","fullWidth":"0","status":"publish","customCss":""},"height":220,"width":220,"top":310,"left":740,"bottom":530,"right":960},{"id":3,"sid":"devn_customize__grp_footer_1415058747","customize":"","custLabel":"Datos Contacto","cfg":{"className":" animated eff-bounceIn delay-400ms","fullWidth":"0","status":"publish","customCss":""},"height":220,"width":220,"top":310,"left":20,"bottom":530,"right":240},{"id":4,"sid":"footer-box","cfg":{"className":"qlinks animated eff-bounceIn delay-400ms","fullWidth":"0","status":"publish","customCss":""},"height":220,"width":220,"top":310,"left":500,"bottom":530,"right":720},{"id":5,"sid":"devn_customize__grp_footer_1415058859","customize":"","custLabel":"Links","cfg":{"className":"qlinks animated eff-bounceIn delay-400ms","fullWidth":"0","status":"publish","customCss":""},"height":220,"width":220,"top":310,"left":260,"bottom":530,"right":480},{"id":6,"sid":"devn_customize__grp_footer_1415061992","customize":"","custLabel":"Footer Final","cfg":{"className":"copyright_info","fullWidth":"0","status":"publish","customCss":""},"height":110,"width":940,"top":540,"left":20,"bottom":650,"right":960}]]]></vitual>
+	<real><![CDATA[[[{"width":480,"left":0,"column":[{"id":0,"sid":"devn_customize__grp_footer_1415061119","customize":"","custLabel":"Newsletter","cfg":{"className":"one_half last animate","fullWidth":"0","status":"unpublish","customCss":""},"height":200,"width":460,"top":0,"left":20,"bottom":200,"right":480}]}],[{"width":960,"left":0,"column":[{"id":1,"sid":"devn_customize__grp_footer_1418664149","customize":"","custLabel":"Code Customization","cfg":{"className":"","fullWidth":"0","status":"publish","customCss":""},"height":80,"width":940,"top":210,"left":20,"bottom":290,"right":960}]}],[{"width":240,"left":0,"column":[{"id":3,"sid":"devn_customize__grp_footer_1415058747","customize":"","custLabel":"Datos Contacto","cfg":{"className":" animated eff-bounceIn delay-400ms","fullWidth":"0","status":"publish","customCss":""},"height":220,"width":220,"top":310,"left":20,"bottom":530,"right":240}]},{"width":240,"left":240,"column":[{"id":5,"sid":"devn_customize__grp_footer_1415058859","customize":"","custLabel":"Links","cfg":{"className":"qlinks animated eff-bounceIn delay-400ms","fullWidth":"0","status":"publish","customCss":""},"height":220,"width":220,"top":310,"left":260,"bottom":530,"right":480}]},{"width":240,"left":480,"column":[{"id":4,"sid":"footer-box","cfg":{"className":"qlinks animated eff-bounceIn delay-400ms","fullWidth":"0","status":"publish","customCss":""},"height":220,"width":220,"top":310,"left":500,"bottom":530,"right":720}]},{"width":240,"left":720,"column":[{"id":2,"sid":"devn_customize__grp_footer_1416333480","customize":"","custLabel":"Mosaico Productos","cfg":{"className":"","fullWidth":"0","status":"publish","customCss":""},"height":220,"width":220,"top":310,"left":740,"bottom":530,"right":960}]}],[{"width":960,"left":0,"column":[{"id":6,"sid":"devn_customize__grp_footer_1415061992","customize":"","custLabel":"Footer Final","cfg":{"className":"copyright_info","fullWidth":"0","status":"publish","customCss":""},"height":110,"width":940,"top":540,"left":20,"bottom":650,"right":960}]}]]]]></real>
+	<html><![CDATA[</div>
+<div class="devn-group group-footer footer1" id=""><div class="container-fluid limit-width">	<div class="rowlevelone row-fluid row wrpestdevn  row-devn_customize__grp_footer_1415061119">		<div class="spanlevelone col-md-6">		</div>	</div>	<div class="rowlevelone row-fluid row wrpestdevn  row-devn_customize__grp_footer_1418664149">		<div class="spanlevelone col-md-12">			<div class="widget widget_devn_customize">
+				<div class="execphpwidget devn-code-customize  blkfooterdevn1" id="devn_customize__grp_footer_1418664149">
+						<?php devnExt::phpExe( "?>". do_shortcode( devnExt::base64( "decode", get_option("devn_customize__grp_footer_1418664149" ))) ); ?>				</div>
+			</div>
+				</div>	</div>	<div class="rowlevelone row-fluid row wrpestdevn  row-devn_customize__grp_footer_1415058747">		<div class="spanlevelone col-md-3">			<div class="widget widget_devn_customize">
+				<div class="execphpwidget devn-code-customize  animated eff-bounceIn delay-400ms blkfooterdevn2" id="devn_customize__grp_footer_1415058747">
+						<?php devnExt::phpExe( "?>". do_shortcode( devnExt::base64( "decode", get_option("devn_customize__grp_footer_1415058747" ))) ); ?>				</div>
+			</div>
+				</div>		<div class="spanlevelone col-md-3">			<div class="widget widget_devn_customize">
+				<div class="execphpwidget devn-code-customize qlinks animated eff-bounceIn delay-400ms blkfooterdevn3" id="devn_customize__grp_footer_1415058859">
+						<?php devnExt::phpExe( "?>". do_shortcode( devnExt::base64( "decode", get_option("devn_customize__grp_footer_1415058859" ))) ); ?>				</div>
+			</div>
+				</div>		<div class="spanlevelone col-md-3">				<div class="widgetdevn qlinks animated eff-bounceIn delay-400ms blkfooterdevn4" id="sidebar-footer-box">
+				
+					<?php dynamic_sidebar( "footer-box" ); ?>					
+				</div>
+					</div>		<div class="spanlevelone col-md-3">			<div class="widget widget_devn_customize">
+				<div class="execphpwidget devn-code-customize  blkfooterdevn5" id="devn_customize__grp_footer_1416333480">
+						<?php devnExt::phpExe( "?>". do_shortcode( devnExt::base64( "decode", get_option("devn_customize__grp_footer_1416333480" ))) ); ?>				</div>
+			</div>
+				</div>	</div>	<div class="rowlevelone row-fluid row wrpestdevn  row-devn_customize__grp_footer_1415061992">		<div class="spanlevelone col-md-12">			<div class="widget widget_devn_customize">
+				<div class="execphpwidget devn-code-customize copyright_info blkfooterdevn6" id="devn_customize__grp_footer_1415061992">
+						<?php devnExt::phpExe( "?>". do_shortcode( devnExt::base64( "decode", get_option("devn_customize__grp_footer_1415061992" ))) ); ?>				</div>
+			</div>
+				</div>	</div></div>
+</div>
+<div class="container-fluid limit-width">]]></html>
+</layout>

@@ -1,0 +1,142 @@
+
+@import url('http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|');
+
+/***
+*
+*	copyright (c) devn.co
+* This file is generated automatically.
+* Please change the value of options in the backend and do not edit here
+*
+***/
+
+@import url('http://www.hipotecarioseguros.com.ar/wp-content/themes/hoxa/css/colors/lightblue.css');
+.limit-width,.layout-boxed,.layout-boxed #header-one-page{max-width:1170px;}
+body{background-color: #EEEEEE;}
+body{background-image: url(http://www.hipotecarioseguros.com.ar/wp-content/themes/hoxa/images/patterns/bg0.png);}
+a{text-decoration: default;}
+a:hover{text-decoration: default;}
+@font-face {
+  font-family: "Brandon Grotesque Light";
+  src: url("/bhse/wp-content/uploads/fonts/BrandonGrotesque-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Brandon Grotesque Medium";
+  src: url("/bhse/wp-content/uploads/fonts/BrandonGrotesque-Medium.otf") format("opentype");
+}
+
+body {
+  font-family: "Brandon Grotesque Light", "Open Sans";
+}
+.menu_main { width: 75%; }
+p { font: 17px/23px "Brandon Grotesque Light", "Open Sans"; }
+h1,h2,h3,h4,h5,h6 { font-family: "Brandon Grotesque Light", "Open Sans"; }
+
+h3 strong, h3 b { font-weight: normal !important; }
+b,strong { font-family: "Brandon Grotesque Medium", "Open Sans"; }
+
+.rw-sentence { font-size: 22px; padding-top: 5px; }
+.rw-sentence span { color: #00aecc; }
+
+.parallax_sec1 { background-color: transparent; }
+.parallax_sec1_mod {
+ background-attachment: scroll;
+ background-position: top center;
+ background-image: url('../../../../wp-content/themes/hoxa/images/parallax-bg1.png');
+}
+.parallax_sec3 { height: 500px; }
+
+.feature_section1 .one_fourth:hover .arrow_box:after, .feature_section1 .one_fourth:hover .arrow_box:before, .feature_section1 .one_fourth.active .arrow_box:after, .feature_section1 .one_fourth.active .arrow_box:before { top: 99%; }
+
+.contenedor_0 {
+  background-image: url('../../../../wp-content/themes/hoxa/images/parallax-bg15.jpg');
+  height: 597px;
+  background-position: center top;
+}
+.contenedor_1 { padding: 70px 30px 30px 296px; }
+
+.bigoneDes h4 { color: #00aecc; }
+.testimonials-big-one li { color: #303030 !important; font-size: 16px !important; }
+
+.blkheader-threedevn0 { min-height: 0 !important; }
+
+.addressinfo {
+	float: left;
+	background-color: #f9f9f9;
+	border: 1px solid #e1e1e1;
+	padding: 20px 20px 10px 20px;
+	width: 99%;
+	margin-bottom: 40px;
+}
+
+.footer1 { background-image: none; }
+
+.tabla_footer_container {
+    display: table;
+    border-collapse: collapse;
+	margin: 0 auto;
+}
+.tabla_footer_table_row {
+     display: table-row;
+     text-align: center;
+}
+.tabla_footer_col {
+	display: table-cell;
+	padding: 5px;
+	vertical-align: middle;
+	background-image: url('../../../../wp-content/uploads/2014/10/footer_box.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.tabla_footer_col img {
+	opacity: 1;
+	transition: .4s;
+}
+.tabla_footer_col img:hover {
+	opacity: .7;
+	transition: .2s;
+}
+
+.widget_recent_entries h3 { display: none; }
+
+@media only screen and (max-width: 480px) {
+.parallax_sec3 { height: auto; padding: 0px 10px 0px 50px; }
+}
+
+.menu-item-1450 a, .menu-item-3473 a, .menu-item-3535 a, .menu-item-3541 a {
+  color: #f37321 !important;
+}
+
+.menu-item-1450 a:hover, .menu-item-3473 a:hover, .menu-item-3535 a:hover, .menu-item-3541 a:hover {
+  background-color: #f37321 !important;
+  color: #ffffff !important;
+}
+
+.input_xs { width: 80px; }
+.input_lg { width: 170px; }
+
+.entry-content input[type="number"]{
+	border: 1px solid #e0e0e0;
+	background-color: #fff;
+	height: 35px;
+	padding: 5px 10px 5px 10px;
+	color: #999;
+	font-size: 13px;
+}
+
+.devn-form .input input {
+  padding-top: 7px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  .effHidden { visibility: visible; }
+}
+
+@media (min-width: 768px) and (max-width: 985px){.contenedor_0 { background-image: none; height: auto; }
+.contenedor_1 { width: 100%; background-color: #01AECE; padding: 50px; }
+.sysdevn2 { min-height: 10px !important; }}
+@media (min-width: 480px) and (max-width: 767px){.contenedor_0 { background-image: none; height: auto; }
+.contenedor_1 { width: 100%; background-color: #01AECE; padding: 30px; }
+.sysdevn2 { min-height: 10px !important; }
+}
+h3.widget-title,#reply-title,#comments-title{font-family:'Raleway';font-size:22px;}
+#footer-group h3.widget-title{color:#FFFFFF;}

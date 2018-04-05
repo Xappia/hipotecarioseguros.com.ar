@@ -1,0 +1,120 @@
+
+* { image-rendering: -webkit-optimize-contrast; }
+
+*:focus { outline: 0; }
+
+::selection {
+	background: #03accd;
+	color: #ffffff;
+}
+::-moz-selection {
+	background: #03accd;
+	color: #ffffff;
+}
+
+::placeholder {
+	color: #8b8b8d !important;
+	opacity: .7 !important;
+	font-size: 0.8rem;
+}
+:-ms-input-placeholder {
+	color: #8b8b8d !important;
+	opacity: .5 !important;
+	font-size: 0.8rem;
+}
+::-ms-input-placeholder {
+	color: #8b8b8d !important;
+	opacity: .5 !important;
+	font-size: 0.8rem;
+}
+
+@font-face {
+	font-family: "Brandon Grotesque Light";
+	src: url("../fonts/BrandonGrotesque-Light.otf");
+}
+
+@font-face {
+	font-family: "Brandon Grotesque Medium";
+	src: url("../fonts/BrandonGrotesque-Medium.otf");
+}
+
+body {
+	font-family: "Brandon Grotesque Light", Arial, sans-serif;
+	cursor: default;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+input, select {
+	border-radius: 0 !important;
+}
+
+.btn {
+	border-radius: 0;
+	padding: .8rem 2.5rem;
+	font-size: .85rem;
+	letter-spacing: .14rem;
+}
+.btn-warning {
+	color: #ffffff;
+	background-color: #f37321;
+}
+.btn-warning.disabled, .btn-warning:disabled {
+	background-color: #acacac;
+}
+.btn-warning:hover {
+	color: #ffffff;
+	background-color: #c86505;
+}
+
+.form-control {
+	border-width: 2px;
+}
+.form-control:focus {
+	border-color: #f37321;
+	box-shadow: 0 0 0 .2rem rgba(255, 209, 140, 0.3);
+}
+
+b, strong, .font-weight-bold {
+	font-family: "Brandon Grotesque Medium";
+}
+
+li {
+	font-size: 50%;
+	color: #05aecd;
+}
+li span {
+	font-size: 1rem;
+	color: #000000;
+}
+.with-errors li {
+	color: #ff0000;
+	font-size: 85%;
+	margin: 2px auto auto 4px;;
+}
+
+.bg-01 {
+	background-image: url("../img/bg-01.png");
+	background-repeat: repeat-y;
+}
+
+.bg-dark {
+	background-color: #333333 !important;
+}
+
+.bg-light {
+	background-color: #f0f0ee !important;
+}
+
+@media (min-width: 992px) {
+	.position-absolute-lg {
+		position: absolute;
+		right: 0;
+	}
+}
+
+.img-bullet {
+	vertical-align: -12px;
+}

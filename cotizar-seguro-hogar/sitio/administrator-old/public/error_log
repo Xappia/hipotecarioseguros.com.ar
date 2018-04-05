@@ -1,0 +1,55 @@
+[09-Jan-2018 23:24:47 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'hipo17'@'localhost' (using password: YES) in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 329
+[09-Jan-2018 23:26:48 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'hipo17'@'localhost' (using password: YES) in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 329
+[10-Jan-2018 14:13:47 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'hipo17'@'localhost' (using password: YES) in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 329
+[10-Jan-2018 17:51:13 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'hipo17'@'localhost' (using password: YES) in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 329
+[10-Jan-2018 18:49:26 UTC] PHP Warning:  include(Connection.php): failed to open stream: No such file or directory in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 18:49:26 UTC] PHP Warning:  include(): Failed opening 'Connection.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 18:49:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function open_conection() in /home/ajfc51yzl763/public_html/administrator/public/planview.php:251
+Stack trace:
+#0 {main}
+  thrown in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 251
+[10-Jan-2018 19:00:20 UTC] PHP Warning:  include(Connection.php): failed to open stream: No such file or directory in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 19:00:20 UTC] PHP Warning:  include(): Failed opening 'Connection.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 19:00:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function open_conection() in /home/ajfc51yzl763/public_html/administrator/public/planview.php:251
+Stack trace:
+#0 {main}
+  thrown in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 251
+[10-Jan-2018 19:00:24 UTC] PHP Warning:  include(Connection.php): failed to open stream: No such file or directory in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 39
+[10-Jan-2018 19:00:24 UTC] PHP Warning:  include(): Failed opening 'Connection.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 39
+[10-Jan-2018 19:00:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function open_conection() in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 52
+[10-Jan-2018 19:30:06 UTC] PHP Warning:  include(Connection.php): failed to open stream: No such file or directory in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 39
+[10-Jan-2018 19:30:06 UTC] PHP Warning:  include(): Failed opening 'Connection.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 39
+[10-Jan-2018 19:30:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function open_conection() in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 52
+[10-Jan-2018 21:40:57 UTC] PHP Warning:  include(Connection.php): failed to open stream: No such file or directory in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 21:40:57 UTC] PHP Warning:  include(): Failed opening 'Connection.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 21:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function open_conection() in /home/ajfc51yzl763/public_html/administrator/public/planview.php:251
+Stack trace:
+#0 {main}
+  thrown in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 251
+[10-Jan-2018 21:43:09 UTC] PHP Warning:  include(Connection.php): failed to open stream: No such file or directory in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 21:43:09 UTC] PHP Warning:  include(): Failed opening 'Connection.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 21:43:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function open_conection() in /home/ajfc51yzl763/public_html/administrator/public/planview.php:251
+Stack trace:
+#0 {main}
+  thrown in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 251
+[10-Jan-2018 21:43:09 UTC] PHP Warning:  include(Connection.php): failed to open stream: No such file or directory in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 21:43:09 UTC] PHP Warning:  include(): Failed opening 'Connection.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 43
+[10-Jan-2018 21:43:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function open_conection() in /home/ajfc51yzl763/public_html/administrator/public/planview.php:251
+Stack trace:
+#0 {main}
+  thrown in /home/ajfc51yzl763/public_html/administrator/public/planview.php on line 251
+[10-Jan-2018 21:43:14 UTC] PHP Warning:  include(Connection.php): failed to open stream: No such file or directory in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 39
+[10-Jan-2018 21:43:14 UTC] PHP Warning:  include(): Failed opening 'Connection.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 39
+[10-Jan-2018 21:43:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function open_conection() in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/ajfc51yzl763/public_html/administrator/public/coverageview.php on line 52
+[10-Jan-2018 21:45:16 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'hipo_admin'@'localhost' to database 'db_quoting' in /home/ajfc51yzl763/public_html/administrator/public/Connection.php on line 12
+[10-Jan-2018 21:45:34 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'hipo_admin'@'localhost' to database 'db_quoting' in /home/ajfc51yzl763/public_html/administrator/public/Connection.php on line 12
+[10-Jan-2018 21:45:39 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'hipo_admin'@'localhost' to database 'db_quoting' in /home/ajfc51yzl763/public_html/administrator/public/Connection.php on line 12

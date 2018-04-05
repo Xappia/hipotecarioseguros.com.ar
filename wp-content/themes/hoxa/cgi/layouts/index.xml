@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- copyright devn.co (c) All Rights Reserved -->
+<!-- @author: devn -->
+<!-- @email: contact@devn.co -->
+<!-- @package: Layout + Cache -->
+<layout>
+	<title>Blog</title>
+	<type>Custom</type>
+	<id>index</id>
+	<blockHeight>1260</blockHeight>
+	<height>1252</height>
+	<private>yes</private>
+	<update>Mon, 04 Jul 16 17:33:59 +0000</update>
+	<css><![CDATA[.sysdevn0{min-height:120px;width:100% !important;margin-left:0% !important;}.sysdevn1{min-height:150px;width:100% !important;margin-left:0% !important;}.sysdevn2{min-height:470px;width:100% !important;margin-left:0% !important;}.sysdevn3{min-height:470px;width:100% !important;margin-left:0% !important;}]]></css>
+	<groups>groups[DS]header-three,groups[DS]footer,</groups>
+	<customHeader><![CDATA[]]></customHeader>
+	<customFooter><![CDATA[]]></customFooter>
+	<groupid><![CDATA[]]></groupid>
+	<groupclass><![CDATA[]]></groupclass>
+	<vitual><![CDATA[[{"id":0,"sid":"groups[DS]header-three","customize":"","custLabel":"","cfg":{"className":"groups[DS]header-three sidebardevn","fullWidth":0,"css":""},"height":90,"width":940,"top":0,"left":20,"bottom":90,"right":960},{"id":1,"sid":"devn_customize_page-952_1414779288","customize":"","custLabel":"Encabezado Imagen","cfg":{"className":"","fullWidth":"2","status":"publish","customCss":""},"height":120,"width":940,"top":100,"left":20,"bottom":220,"right":960},{"id":2,"sid":"devn_customize_index_1418594720","customize":"","custLabel":"Encabezado Sección","cfg":{"className":"breadcrumbs page_title2","fullWidth":"2","status":"publish","customCss":""},"height":150,"width":940,"top":230,"left":20,"bottom":380,"right":960},{"id":3,"sid":"right-column","cfg":{"className":"right-column sidebardevn","fullWidth":0,"css":""},"height":470,"width":220,"top":390,"left":740,"bottom":860,"right":960},{"id":4,"sid":"content","cfg":{"className":"content sidebardevn","fullWidth":0,"css":"","showBlog":0},"height":470,"width":700,"top":390,"left":20,"bottom":860,"right":720},{"id":5,"sid":"groups[DS]footer","customize":"","custLabel":"","cfg":{"className":"groups[DS]footer sidebardevn","fullWidth":0,"css":""},"height":130,"width":940,"top":1130,"left":20,"bottom":1260,"right":960}]]]></vitual>
+	<real><![CDATA[[[{"width":960,"left":0,"column":[{"id":0,"sid":"groups[DS]header-three","customize":"","custLabel":"","cfg":{"className":"groups[DS]header-three sidebardevn","fullWidth":0,"css":""},"height":90,"width":940,"top":0,"left":20,"bottom":90,"right":960}]}],[{"width":960,"left":0,"column":[{"id":1,"sid":"devn_customize_page-952_1414779288","customize":"","custLabel":"Encabezado Imagen","cfg":{"className":"","fullWidth":"2","status":"publish","customCss":""},"height":120,"width":940,"top":100,"left":20,"bottom":220,"right":960}]}],[{"width":960,"left":0,"column":[{"id":2,"sid":"devn_customize_index_1418594720","customize":"","custLabel":"Encabezado Sección","cfg":{"className":"breadcrumbs page_title2","fullWidth":"2","status":"publish","customCss":""},"height":150,"width":940,"top":230,"left":20,"bottom":380,"right":960}]}],[{"width":720,"left":0,"column":[{"id":4,"sid":"content","cfg":{"className":"content sidebardevn","fullWidth":0,"css":"","showBlog":0},"height":470,"width":700,"top":390,"left":20,"bottom":860,"right":720}]},{"width":240,"left":720,"column":[{"id":3,"sid":"right-column","cfg":{"className":"right-column sidebardevn","fullWidth":0,"css":""},"height":470,"width":220,"top":390,"left":740,"bottom":860,"right":960}]}],[{"width":960,"left":0,"column":[{"id":5,"sid":"groups[DS]footer","customize":"","custLabel":"","cfg":{"className":"groups[DS]footer sidebardevn","fullWidth":0,"css":""},"height":130,"width":940,"top":1130,"left":20,"bottom":1260,"right":960}]}]]]]></real>
+	<html><![CDATA[<div class="container-fluid limit-width container-groups-header-three"><?php devn::sidebarGroup('groups[DS]header-three'); ?></div><div class="container-fluid full-width full-width-devn_customize_page-952_1414779288">	<div class="rowlevelone row-fluid row wrpestdevn rowFullWidth row-devn_customize_page-952_1414779288">		<div class="spanlevelone col-md-12">			<div class="widget widget_devn_customize">
+				<div class="execphpwidget devn-code-customize  sysdevn0" id="devn_customize_page-952_1414779288">
+						<?php devnExt::phpExe( "?>". do_shortcode( devnExt::base64( "decode", get_option("devn_customize_page-952_1414779288" ))) ); ?>				</div>
+			</div>
+				</div>	</div></div><div class="container-fluid full-width full-width-devn_customize_index_1418594720">	<div class="rowlevelone row-fluid row wrpestdevn rowFullWidth row-devn_customize_index_1418594720">		<div class="spanlevelone col-md-12">			<div class="widget widget_devn_customize">
+				<div class="execphpwidget devn-code-customize breadcrumbs page_title2 sysdevn1" id="devn_customize_index_1418594720">
+						<?php devnExt::phpExe( "?>". do_shortcode( devnExt::base64( "decode", get_option("devn_customize_index_1418594720" ))) ); ?>				</div>
+			</div>
+				</div>	</div></div><div class="container-fluid limit-width">	<div class="rowlevelone row-fluid row wrpestdevn  row-content">		<div class="spanlevelone col-md-9">				<div class="widgetdevn content sidebardevn sysdevn2" id="sidebar-content">
+				
+					<?php dynamic_sidebar( "content" ); ?>					
+				</div>
+					</div>		<div class="spanlevelone col-md-3">				<div class="widgetdevn right-column sidebardevn sysdevn3" id="sidebar-right-column">
+				
+					<?php dynamic_sidebar( "right-column" ); ?>					
+				</div>
+					</div>	</div><?php devn::sidebarGroup('groups[DS]footer'); ?></div>]]></html>
+</layout>

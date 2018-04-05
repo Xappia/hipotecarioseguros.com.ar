@@ -1,0 +1,21 @@
+
+<span id='sab_bar_opn'>
+  <img src="/wp-content/uploads/datos_web_closed.png" style="max-width:100%;">
+</span>
+
+<div id='sab_wrap'>
+<div id='sab_content'>
+	<p id='sticky_ad_bar'><?php echo do_shortcode(get_option('sab_content')); ?></p>
+</div>
+<div id='sab_elem'>
+
+<?php if (get_option('sab_show_close_button')=='Enable') {
+?> 
+		<img src="<?php echo plugins_url('images/close.png',__FILE__); ?>" alt="Cerrar" id='sab_close_btn'>
+	  <?php ;
+} ?>
+
+	
+</div>
+</div>
+

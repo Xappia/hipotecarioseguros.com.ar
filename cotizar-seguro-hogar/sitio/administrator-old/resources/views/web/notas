@@ -1,0 +1,77 @@
+<div>
+    <div class="title m-b-md">
+        <h1>Preguntas</h1>
+    </div>
+    <div>
+        <!-- Display Validation Errors -->
+        @include('common.errors')
+
+        <!-- Nueva Pregunta -->
+        <form action="/preguntas" method="POST" >
+            {{ csrf_field() }}
+
+            <!-- Descripcion de la Pregunta -->
+            <div>
+                <label for="question">Pregunta</label>
+
+                <div >
+                    <input type="text" name="question" id="question">
+                </div>
+            </div>
+
+            <!-- tipo de la Pregunta -->
+            <div>
+                <label for="type">Tipo</label>
+
+                <div >
+                    <input type="text" name="type" id="type">
+                </div>
+            </div>
+
+            <!-- Archivo php de la Pregunta -->
+            <div>
+                <label for="phpfile">Archivo PHP</label>
+
+                <div >
+                    <input type="text" name="phpfile" id="phpfile">
+                </div>
+            </div>
+
+            <!-- score de la Pregunta -->
+            <div>
+                <label for="score">Score</label>
+
+                <div >
+                    <input type="text" name="score" id="score">
+                </div>
+            </div>
+
+            <!-- jsonscore de la Pregunta -->
+            <div>
+                <label for="question">JSon de la Pregunta</label>
+
+                <div >
+                    <input type="text" name="jsonscore" id="jsonscore">
+                </div>
+            </div>
+
+            <!-- Importancia de la Pregunta -->
+            <div>
+                <label for="question">Destacada</label>
+
+                <div >
+                    <input type="text" name="highlight" id="highlight">
+                </div>
+            </div>
+
+            <!-- Boton Agregar Pregunta-->
+            <div>
+                <div>
+                    <button type="submit">
+                        <i></i> Add Task
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,5 +1,10 @@
 $(document).ready(function(e) {
 
+	$("#telefono_area").blur(function() {
+		var area = $("#telefono_area").val();
+		$("#telefono_area").val(area.replace(/^0+/, ''));
+	});
+
 	var currentdate = new Date(); 
 	var datetime = ("0" + currentdate.getDate()).slice(-2) + "/" + ("0" + (currentdate.getMonth()+1)).slice(-2) + "/" + currentdate.getFullYear() + " " + ("0" + currentdate.getHours()).slice(-2) + ":" + ("0" + currentdate.getMinutes()).slice(-2) + ":" + ("0" + currentdate.getSeconds()).slice(-2);
 	$("#fecha").val(datetime);

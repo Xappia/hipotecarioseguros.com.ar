@@ -1,6 +1,11 @@
 
 $(document).ready(function(e) {
 
+	$("#00NW0000001YdwE").blur(function() {
+		var area = $("#00NW0000001YdwE").val();
+		$("#00NW0000001YdwE").val(area.replace(/^0+/, ''));
+	});
+
 	$('#formulario').on('invalid.bs.validator', function(ev) {
 		if($(window).width() >= 992) {
 			$("#container-aux").height($(".position-absolute-lg").innerHeight() - 225 + 30);

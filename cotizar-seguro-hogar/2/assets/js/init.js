@@ -20,7 +20,7 @@ $(document).ready(function(e) {
     function validate_number_length(){
         var valid = false;
         var maxLength = 10;
-        var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+        var completeNumber = $("#00NQ0000001wsEG").val() + $("#phone").val();
         if(completeNumber.length == maxLength){
             valid = true;
         }

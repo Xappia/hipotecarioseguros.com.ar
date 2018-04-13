@@ -6,22 +6,22 @@ $(document).ready(function(e) {
 		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
 	});
 
-	function validate_number_length(ev){
-		console.log(ev);
-		if(ev == "keyup"){
-            $("#btn_enviar").prop("disabled", true);
-		} else if(ev == "blur"){
-            $("#phone-error").show();
-		}
+	$("#phone").blur(validate_number_length()).keyup(function(){
+        $("#btn_enviar").prop("disabled", true);
         var maxLength = 10;
         var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
         if(completeNumber.length == maxLength){
-            if(ev == "keyup"){
-                $("#btn_enviar").prop("disabled", false);
-            } else if(ev == "blur"){
-                $("#phone-error").hide();
-            }
+            $("#btn_enviar").prop("disabled", false);
+        }
+    });
+	$("#00NQ0000001wsEB").blur(validate_number_length());
 
+	function validate_number_length(){
+        $("#phone-error").show();
+        var maxLength = 10;
+        var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+        if(completeNumber.length == maxLength){
+            $("#phone-error").hide();
         }
 	}
 

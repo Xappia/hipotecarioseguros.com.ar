@@ -1,9 +1,9 @@
 
 $(document).ready(function(e) {
 
-	$("#00NW0000001YdwE").blur(function() {
-		var area = $("#00NW0000001YdwE").val();
-		$("#00NW0000001YdwE").val(area.replace(/^0+/, ''));
+	$("#00NQ0000001wsEG").blur(function() {
+		var area = $("#00NQ0000001wsEG").val();
+		$("#00NQ0000001wsEG").val(area.replace(/^0+/, ''));
 	});
 
 	$('#formulario').on('invalid.bs.validator', function(ev) {

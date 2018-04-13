@@ -4,6 +4,7 @@ $(document).ready(function(e) {
 	$("#00NQ0000001wsEB").blur(function() {
 		var area = $("#00NQ0000001wsEB").val();
 		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
+        validate_number_length();
 	});
 
 	$("#phone").blur(validate_number_length()).keyup(function(){
@@ -14,7 +15,6 @@ $(document).ready(function(e) {
             $("#btn_enviar").prop("disabled", false);
         }
     });
-	$("#00NQ0000001wsEB").blur(validate_number_length());
 
 	function validate_number_length(){
         $("#phone-error").show();

@@ -6,6 +6,27 @@ $(document).ready(function(e) {
 		$("#00NQ0000001wsEG").val(area.replace(/^0+/, ''));
 	});
 
+    $("#phone").blur(function(){
+        (validate_number_length())?$("#phone-error").hide():$("#phone-error").show();
+    }).keyup(function(){
+        if(validate_number_length()) {
+            $("#btn_enviar").prop("disabled", false);
+            $("#phone-error").hide();
+        } else {
+            $("#btn_enviar").prop("disabled", true);
+        }
+    });
+
+    function validate_number_length(){
+        var valid = false;
+        var maxLength = 10;
+        var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+        if(completeNumber.length == maxLength){
+            valid = true;
+        }
+        return valid;
+    }
+
 	$('#formulario').on('invalid.bs.validator', function(ev) {
 		if($(window).width() >= 992) {
 			$("#container-aux").height($(".position-absolute-lg").innerHeight() - 225 + 30);

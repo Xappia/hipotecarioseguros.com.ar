@@ -9,7 +9,12 @@ $(document).ready(function(e) {
 	$("#phone").blur(function(){
 		(validate_number_length())?$("#phone-error").hide():$("#phone-error").show();
 	}).keyup(function(){
-        (validate_number_length())?$("#btn_enviar").prop("disabled", false):$("#btn_enviar").prop("disabled", true);
+        if(validate_number_length()) {
+            $("#btn_enviar").prop("disabled", false);
+            $("#phone-error").hide();
+        } else {
+            $("#btn_enviar").prop("disabled", true);
+        }
     });
 
 	function validate_number_length(){

@@ -6,6 +6,15 @@ $(document).ready(function(e) {
 		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
 	});
 
+	$("#phone").blur(function(){
+        $("#btn_enviar").prop("disabled", true);
+		var maxLength = 10;
+		var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+		if(completeNumber.length == maxLength){
+            $("#btn_enviar").prop("disabled", false);
+		}
+	});
+
 	$("#formulario").validator().on('submit', function(e) {
 
 		if(!e.isDefaultPrevented()) {

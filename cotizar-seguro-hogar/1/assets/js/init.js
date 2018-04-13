@@ -7,11 +7,11 @@ $(document).ready(function(e) {
 	});
 
 	$("#phone").blur(function(){
-        $("#phone-error").innerHTML("Longitud de número incorrecta.");
+        $("#phone-error").show();
         var maxLength = 10;
         var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
         if(completeNumber.length == maxLength){
-            $("#phone-error").innerHTML("");
+            $("#phone-error").hide();
         }
     }).keyup(function(){
         $("#btn_enviar").prop("disabled", true);

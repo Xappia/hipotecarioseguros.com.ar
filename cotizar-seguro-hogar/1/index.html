@@ -95,15 +95,15 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00NQ0000001wsEB" name="00NQ0000001wsEB" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo 2 números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+                      <input id="00NQ0000001wsEB" name="00NQ0000001wsEB" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Sólo 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
-                  <div class="help-block with-errors"></div>
+                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Hasta 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
+                  <div id="phone-error" class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">

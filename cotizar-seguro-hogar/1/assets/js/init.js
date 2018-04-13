@@ -7,13 +7,20 @@ $(document).ready(function(e) {
 	});
 
 	$("#phone").blur(function(){
+        $("#phone-error").innerHTML("Longitud de número incorrecta.");
+        var maxLength = 10;
+        var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+        if(completeNumber.length == maxLength){
+            $("#phone-error").innerHTML("");
+        }
+    }).keyup(function(){
         $("#btn_enviar").prop("disabled", true);
-		var maxLength = 10;
-		var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
-		if(completeNumber.length == maxLength){
+        var maxLength = 10;
+        var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+        if(completeNumber.length == maxLength){
             $("#btn_enviar").prop("disabled", false);
-		}
-	});
+        }
+    });
 
 	$("#formulario").validator().on('submit', function(e) {
 

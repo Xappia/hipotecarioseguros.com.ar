@@ -75,6 +75,24 @@
     <img width="1" height="1" src="https://www.canalmail.com/tcr.jsp?a=32623.1.R.canalmail.1.canalmail.1">
     <img src="http://pml.afftrack.com/image?pid=9da79b0bf36746da" width="1" height="1">
 
+    <!-- Linktrack.info conversion tracking -->
+    <!-- <img height=1 width=1 border=0 src="https://linktrack.info/api/track?redirect_hash=.2s48l"> -->
+    <!-- End Linktrack.info conversion tracking -->
+
+    <script type="text/javascript">
+    var _ttsNewVals = [ {"Conversiones":"0"}];
+    var _tts = _tts || [];
+    var _ttsOverride = window._ttsNewVals!=undefined?_ttsNewVals:[];
+    _tts.push(['_setTrackingLink', 'SF+JoG_5PQWG4yRXACFS_A']);
+    _tts.push(['_trackPageviewWI']);
+    _tts.push(['values', _ttsOverride]); 
+    (function() {
+    var tt = document.createElement('script'); tt.type = 'text/javascript'; tt.async = true;
+    tt.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'trd45.com/public/webTracker/tt.js?w=q3vB+iZMT43ldlJZgsTCHQ';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tt, s);
+    })();
+    </script> 
+
     <script type="text/javascript" src="https://d1zsrgn9qzxpj2.cloudfront.net/trk.js?k=764995736"></script>
     <!-- Soicos www.soicos.com Hipotecario Seguros -->
     <script type="text/javascript" src="http://ad.soicos.com/soicosjs.php?s=.js"></script>

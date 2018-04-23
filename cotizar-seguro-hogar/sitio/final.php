@@ -74,6 +74,7 @@
     <img src="https://my.pampanetwork.com/scripts/sale.php?AccountId=40fc2393&TotalCost=0&OrderID={OrderId}&ActionCode=lead&CampaignId=51aa5de8" width="1" height="1">
     <img width="1" height="1" src="https://www.canalmail.com/tcr.jsp?a=32623.1.R.canalmail.1.canalmail.1">
     <img src="http://pml.afftrack.com/image?pid=9da79b0bf36746da" width="1" height="1">
+    <img src='http://pixel.loganmedia.mobi/pixel/c/11929' width='1' height='1' />
 
     <!-- Linktrack.info conversion tracking -->
     <!-- <img height=1 width=1 border=0 src="https://linktrack.info/api/track?redirect_hash=.2s48l"> -->

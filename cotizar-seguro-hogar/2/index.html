@@ -106,14 +106,14 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00NQ0000001wsEB" name="00NQ0000001wsEB" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+                      <input id="00NQ0000001wsEB" name="00NQ0000001wsEB" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' onkeydown="validateFirstNumber(this)"  onfocusout="eraseFirstZero(this)"  onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)"  data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Hasta 8 números, sin el "15"'  maxlength="8" pattern="\d{6,8}" required>
+                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" onfocus="changePhoneMaxLength(this)"  data-error='Requerido. Hasta 8 números, sin el "15"'  maxlength="8" pattern="\d{6,8}" required>
                   <div class="help-block with-errors">
                     <span id="phone-error" style="color: #ff0000;font-size: 85%;margin: 2px auto auto 4px;display: none;">Verifique su número por favor. La longitud es incorrecta.</span>
                   </div>
@@ -230,6 +230,35 @@
     <script src="assets/js/init.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+	
+	<script>
+      function validateFirstNumber(ele) {
+        if (ele.value.charAt(0) == "0") {
+          ele.setAttribute("maxlength", "5");
+        }
+        if (ele.value.charAt(0) != "0") {
+          ele.setAttribute("maxlength", "4");
+        }
+      }
+      function eraseFirstZero(ele) {
+        var s = ele.value;
+        while (s.charAt(0) === '0') {
+          s = s.substr(1);
+          }
+        ele.value = s;
+      }
+      function changePhoneMaxLength(ele) {
+        var newLengthForPhone = 10 - document.getElementById('00NQ0000001wsEB').value.length;
+        ele.setAttribute("maxlength", newLengthForPhone);
+      }
+      function changeAreaMaxLength(ele) {
+        if (document.getElementById("phone").value.length > 6) {
+          var newLengthForArea = 10 - document.getElementById("phone").value.length;
+          ele.setAttribute("maxlength", newLengthForArea);
+        }
+      }
+    </script>
+	
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41737234-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

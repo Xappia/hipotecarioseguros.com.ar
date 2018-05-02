@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html lang="es">
@@ -24,7 +25,7 @@
 
     <meta property="og:title" content="Cotizá tu seguro de hogar – HIPOTECARIO SEGUROS">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="//hipotecarioseguros.com.ar/cotizar-seguro-hogar/2/">
+    <meta property="og:url" content="//hipotecarioseguros.com.ar/cotizar-seguro-hogar/1/">
     <meta property="og:image" content="//hipotecarioseguros.com.ar/cotizar-seguro-hogar/assets/img/og_bhse.jpg">
     <meta property="og:site_name" content="Hipotecario Seguros">
     <meta property="og:description" content="Cotizar tu seguro del hogar nunca fue tan fácil. Cuesta mucho menos de lo que te imaginás. Es momento de disfrutar de la tranquilidad que vos y tu familia se merecen. COTIZÁ AHORA con la compañía Nro 1 protegiendo hogares en la Argentina. No esperes más.">
@@ -48,31 +49,29 @@
 
             <div id="formulario_contenedor">
 
-              <form role="form" id="formulario" action="https://cs52.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" data-toggle="validator" data-delay="1500" autocomplete="off">
+              <form role="form" id="formulario" action="https://cs13.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" data-toggle="validator" data-delay="1500" autocomplete="off">
 
-                <input type=hidden name="oid" value="00D5B0000000Xz4">
+                <input type=hidden name="oid" value="00DQ000000EeRBG">
                 <input type=hidden name="retURL" value="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/final.php">
-
                 <input type="hidden" id="LeadSource" name="LeadSource" value="En-tienda"/>
 
                 <!-- Codigo de Ramo -->
-                <input type="hidden" id="00N5B000001IgcD" name="00N5B000001IgcD" value="002"/>
+                <input type="hidden" id="00NW0000001YdwD" name="00NW0000001YdwD" value="002"/>
                 <!--Descripcion de Ramo -->
-                <input type="hidden" id="00N5B000001IgcH" name="00N5B000001IgcH" value="Hogar"/>
+                <input type="hidden" id="00NW0000001YdwH" name="00NW0000001YdwH" value="Hogar"/>
 
                 <!-- Codigo de Producto -->
-                <input type="hidden" id="00N5B000001IgcC" name="00N5B000001IgcC" value="011"/>
+                <input type="hidden" id="00NW0000001YdwC" name="00NW0000001YdwC" value="011"/>
                 <!--Descripcion de Producto -->
-                <input type="hidden" id="00N5B000001IgcG" name="00N5B000001IgcG" value="Ejemplo"/>
+                <input type="hidden" id="00NW0000001YdwG" name="00NW0000001YdwG" value="Ejemplo"/>
 
                 <!-- Codigo de Plan -->
-                <input type="hidden" id="00N5B000001IgcB" name="00N5B000001IgcB" value="002"/>
+                <input type="hidden" id="00NW0000001YdwB" name="00NW0000001YdwB" value="002"/>
                 <!--Descripcion de Plan -->
-                <input type="hidden" id="00N5B000001IgcF" name="00N5B000001IgcF" value="Ejemplo"/>
+                <input type="hidden" id="00NW0000001YdwF" name="00NW0000001YdwF" value="Ejemplo"/>
 
                 <!--Premio -->
-                <input type="hidden" id="00N5B000001IgcM" name="00N5B000001IgcM" value=""/>
-
+                <input type="hidden" id="00NW0000001h2bA" name="00NW0000001h2bA" value=""/>
 
                 <div class="form-group">
                   <input id="first_name" maxlength="40" name="first_name" type="text" class="form-control form-control-lg" placeholder="NOMBRE" data-error="Requerido. Mínimo 2 caracteres." data-minlength="2" required>
@@ -84,20 +83,10 @@
                   <div class="help-block with-errors"></div>
                 </div>
 
-                <div class="form-group">
-                  <input id="00No000000Cm63X" maxlength="80" name="00No000000Cm63X" type="text" class="form-control form-control-lg" placeholder="DNI" data-error="Requerido. Sólo números." pattern="\d{7,8}" required>
-                  <div class="help-block with-errors"></div>
-                </div>
-
-                <div class="form-group">
-                  <input id="email" maxlength="80" name="email" type="email" class="form-control form-control-lg" placeholder="MAIL" data-error="Es requerido un email válido." required>
-                  <div class="help-block with-errors"></div>
-                </div>
-
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group">
-                      <select id="00N5B000001IgcO" name="00N5B000001IgcO" title="Tipo de teléfono" class="form-control form-control-lg">
+                      <select id="00NW0000001YdwL" name="00NW0000001YdwL" title="Tipo de telefono" class="form-control form-control-lg">
                         <option value="">--Ninguno--</option>
                         <option value="Celular">Celular</option>
                         <option value="Particular">Particular</option>
@@ -106,62 +95,22 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00N5B000001IgcE" name="00N5B000001IgcE" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' onkeydown="validateFirstNumber(this)"  onfocusout="eraseFirstZero(this)"  onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)"  data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+                      <input id="00NW0000001YdwE" name="00NW0000001YdwE" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' onkeydown="validateFirstNumber(this)" onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)" data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" onfocus="changePhoneMaxLength(this)"  data-error='Requerido. Hasta 8 números, sin el "15"'  maxlength="8" pattern="\d{6,8}" required>
+                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" onfocus="changePhoneMaxLength(this)" data-error='Requerido. Hasta 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
                   <div class="help-block with-errors">
-                    <span id="phone-error" style="color: #ff0000;font-size: 85%;margin: 2px auto auto 4px;display: none;">Verifique su número por favor. La longitud es incorrecta.</span>
+                    <span id="phone-error" style="color: #707070;font-size: 85%;margin: 2px auto auto 4px">Su teléfono no debe incluir más de diez caracteres (incluyendo el código de área).</span>
                   </div>
                 </div>
 
-                <div class="form-row">
-                  <div class="col">
-                    <div class="form-group row">
-                      <label for="00N5B000001IgcK" class="col-sm-6 col-form-label-lg">Franja horaria</label>
-                      <div class="col-sm-6">
-                        <select id="00N5B000001IgcK" name="00N5B000001IgcK" class="form-control form-control-lg">
-                          <option value="9-12">9 a 12 hs</option>
-                          <option value="12-15">12 a 15 hs</option>
-                          <option value="15-18">15 a 18 hs</option>
-                          <option value="18-21">18 a 21 hs</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="col">
-                    <div class="form-group row">
-                      <label for="00N5B000001IgcL" class="col-sm-6 col-form-label-lg">¿Posee tarjeta de crédito?</label>
-                      <div class="col-sm-6">
-                        <select id="00N5B000001IgcL" name="00N5B000001IgcL" class="form-control form-control-lg">
-                          <option value="Si">Si</option>
-                          <option value="No">No</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="col">
-                    <div class="form-group row">
-                      <label for="00N5B000001IgcN" class="col-sm-6 col-form-label-lg">Sexo</label>
-                      <div class="col-sm-6">
-                        <select id="00N5B000001IgcN" name="00N5B000001IgcN" class="form-control form-control-lg">
-                          <option value="">--Ninguno--</option>
-                          <option value="Masculino">Masculino</option>
-                          <option value="Femenino">Femenino</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form-group">
+                  <input id="email" maxlength="80" name="email" type="email" class="form-control form-control-lg" placeholder="MAIL" data-error="Es requerido un email válido." required>
+                  <div class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">
@@ -190,7 +139,7 @@
     </div>
 
 
-    <div class="container" id="container-aux">
+    <div class="container">
       <div class="row">
         <div class="col-lg-7 pt-5 pb-5">
           <h5 class="font-weight-bold mb-4">LA ASISTENCIA DOMICILIARIA GRATUITA INCLUYE:</h5>
@@ -223,15 +172,14 @@
       </div>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="assets/js/validator.js"></script>
     <script src="assets/js/init.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	
-	<script>
+    <script>
       function validateFirstNumber(ele) {
         if (ele.value.charAt(0) == "0") {
           ele.setAttribute("maxlength", "5");
@@ -248,7 +196,7 @@
         ele.value = s;
       }
       function changePhoneMaxLength(ele) {
-        var newLengthForPhone = 10 - document.getElementById('00NQ0000001wsEB').value.length;
+        var newLengthForPhone = 10 - document.getElementById('00NW0000001YdwE').value.length;
         ele.setAttribute("maxlength", newLengthForPhone);
       }
       function changeAreaMaxLength(ele) {
@@ -258,7 +206,8 @@
         }
       }
     </script>
-	
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41737234-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

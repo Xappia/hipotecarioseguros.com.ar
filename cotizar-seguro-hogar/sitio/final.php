@@ -70,10 +70,39 @@
 
 
     <!-- Tracking Inicio -->
+    <img src="https://lot.neatpowr.com/trk_o?adv_sub=SUBID" width="1" height="1">
     <img height='1' width='1' border='0' src='//www.clickmeter.com/conversion.aspx?id=DA731DEAB9704BD3B42EA2F7661AFBEF&val=0.00&param=empty&com=0.00&comperc=0.00&pixel=true'>
     <img src="https://my.pampanetwork.com/scripts/sale.php?AccountId=40fc2393&TotalCost=0&OrderID={OrderId}&ActionCode=lead&CampaignId=51aa5de8" width="1" height="1">
     <img width="1" height="1" src="https://www.canalmail.com/tcr.jsp?a=32623.1.R.canalmail.1.canalmail.1">
-    <img src="http://pml.afftrack.com/image?pid=9da79b0bf36746da" width="1" height="1">
+    <img src="http://affleads.latamtracking.com/image?pid=9da79b0bf36746da" width="1" height="1"> 
+    <img src='http://pixel.loganmedia.mobi/pixel/c/11929' width='1' height='1' />
+
+    <!-- Linktrack.info conversion tracking -->
+    <!-- <img height=1 width=1 border=0 src="https://linktrack.info/api/track?redirect_hash=.2s48l"> -->
+    <!-- End Linktrack.info conversion tracking -->
+
+    <script type="text/javascript">
+    var _ttsNewVals = [ {"Conversiones":"0"}];
+    var _tts = _tts || [];
+    var _ttsOverride = window._ttsNewVals!=undefined?_ttsNewVals:[];
+    _tts.push(['_setTrackingLink', 'SF+JoG_5PQWG4yRXACFS_A']);
+    _tts.push(['_trackPageviewWI']);
+    _tts.push(['values', _ttsOverride]); 
+    (function() {
+    var tt = document.createElement('script'); tt.type = 'text/javascript'; tt.async = true;
+    tt.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'trd45.com/public/webTracker/tt.js?w=q3vB+iZMT43ldlJZgsTCHQ';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tt, s);
+    })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41737234-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-41737234-3');
+    </script>
 
     <script type="text/javascript" src="https://d1zsrgn9qzxpj2.cloudfront.net/trk.js?k=764995736"></script>
     <!-- Soicos www.soicos.com Hipotecario Seguros -->

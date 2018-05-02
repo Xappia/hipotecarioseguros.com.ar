@@ -1,10 +1,31 @@
 
 $(document).ready(function(e) {
 
-	$("#telefono_area").blur(function() {
-		var area = $("#telefono_area").val();
-		$("#telefono_area").val(area.replace(/^0+/, ''));
+	$("#00NQ0000001wsEB").blur(function() {
+		var area = $("#00NQ0000001wsEB").val();
+		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
 	});
+
+    $("#telefono_numero").blur(function(){
+        (validate_number_length())?$("#phone-error").hide():$("#phone-error").show();
+    }).keyup(function(){
+        if(validate_number_length()) {
+            $("#btn_enviar").prop("disabled", false);
+            $("#phone-error").hide();
+        } else {
+            $("#btn_enviar").prop("disabled", true);
+        }
+    });
+
+    function validate_number_length(){
+        var valid = false;
+        var maxLength = 10;
+        var completeNumber = $("#00NQ0000001wsEB").val() + $("#telefono_numero").val();
+        if(completeNumber.length == maxLength){
+            valid = true;
+        }
+        return valid;
+    }
 
 	var currentdate = new Date(); 
 	var datetime = ("0" + currentdate.getDate()).slice(-2) + "/" + ("0" + (currentdate.getMonth()+1)).slice(-2) + "/" + currentdate.getFullYear() + " " + ("0" + currentdate.getHours()).slice(-2) + ":" + ("0" + currentdate.getMinutes()).slice(-2) + ":" + ("0" + currentdate.getSeconds()).slice(-2);

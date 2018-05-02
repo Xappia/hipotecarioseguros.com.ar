@@ -84,8 +84,8 @@
             <div class="col-lg-8 col-lg-offset">
               
             </div>
-            <form id="dProspect" method="post" class="form" action="https://cs3.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" onsubmit="return ValidateForm()">
-			  <input type=hidden name="oid" value="00DQ000000EeRBG">
+            <form id="dProspect" method="post" class="form" action="https://cs13.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" onsubmit="return ValidateForm()">
+			  <input type=hidden name="oid" value="00DW0000008xGbx">
 			  <input type=hidden name="retURL" value="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/final.php">			
               <div class="row justify-content-lg-center">
                 <div class="col-lg-4 col-sm-12">
@@ -98,7 +98,7 @@
               <div class="w-100"></div>  
               <div class="row justify-content-lg-center">
                 <div class="col-lg-4 col-sm-12">
-                  <select required class="form-control" name="00NQ0000001wsEQ" id="00NQ0000001wsEQ">
+                  <select required class="form-control" name="00NW0000001ZLFk" id="00NW0000001ZLFk">
                     <option value="" disabled selected>SEXO</option>
                     <option value="1">MUJER</option>
                     <option value="2">HOMBRE</option>
@@ -110,14 +110,14 @@
               </div>
               <div class="row justify-content-lg-center">
                 <div class="col-lg-2 col-sm-12">
-                  <select required class="form-control" name="00NQ0000001wsE6" id="00NQ0000001wsE6">
+                  <select required class="form-control" name="00NW0000001YdwL" id="00NW0000001YdwL">
                     <option value="" disabled selected>TIPO DE TELÉFONO</option>
                     <option value="Celular">CELULAR</option>
                     <option value="Particular">PARTICULAR</option>
                   </select>
                 </div> 
                 <div class="col-lg-2 col-sm-12">
-                  <input type="text" required class="form-control" pattern=".{3,4}" required onKeyPress="return numberOnly(event);" title="Código de área de 3 a 4 dígitos" maxlength="4" name="00NQ0000001wsEB" id="00NQ0000001wsEB" placeholder="COD. ÁREA">
+                  <input type="text" required class="form-control" pattern=".{3,4}" required onKeyPress="return numberOnly(event);" title="Código de área de 3 a 4 dígitos" maxlength="4" name="00NW0000001YdwE" id="00NW0000001YdwE" placeholder="COD. ÁREA">
                 </div> 
                 <div class="col-lg-4 col-sm-12">
                   <input type="text" required class="form-control" pattern=".{8,8}" required onKeyPress="return numberOnly(event);" title="Número de teléfono de 8 dígitos" maxlength="8" name="phone" id="phone" placeholder="TELÉFONO">
@@ -128,7 +128,7 @@
                   <input type="email" required class="form-control" name="email" id="email" placeholder="MAIL">
                 </div> 
                 <div class="col-lg-4 col-sm-12">
-                  <select required class="form-control" name="00NQ0000001wsEG" id="00NQ0000001wsEG">
+                  <select required class="form-control" name="00NW0000001YdwJ" id="00NW0000001YdwJ">
                     <option value="" disabled selected>FRANJA HORARIA</option>
                     <option value="9-12">9-12</option>
                     <option value="12-15">12-15</option>
@@ -139,7 +139,7 @@
               </div>
               <div class="row justify-content-lg-center">
                 <div class="col-lg-4 col-sm-12">
-                  <select required class="form-control" name="00NQ0000001wsEL" id="00NQ0000001wsEL">
+                  <select required class="form-control" name="00NW0000001YdwK" id="00NW0000001YdwK">
                     <option value="" disabled selected>POSEE TARJETA DE CRÉDITO</option>
                     <option value="1">SÍ</option>
                     <option value="0">NO</option>
@@ -158,22 +158,22 @@
 				<input type = "hidden" id="LeadSource" name="LeadSource" value="En-tienda"/>
 
 				<!-- Codigo de Ramo -->
-				<input type="hidden" id="00NQ0000001wsEV" name="00NQ0000001wsEV" value="002"/>
+				<input type="hidden" id="00NW0000001YdwD" name="00NW0000001YdwD" value="002"/>
 				<!--Descripcion de Ramo -->
-				<input type="hidden" id="00NQ0000001wsEk" name="00NQ0000001wsEk" value="Hogar"/>
+				<input type="hidden" id="00NW0000001YdwH" name="00NW0000001YdwH" value="Hogar"/>
 
 				<!-- Codigo de Producto -->
-				<input type="hidden" id="00NQ0000001wsEa" name="00NQ0000001wsEa" value="011"/>
+				<input type="hidden" id="00NW0000001YdwC" name="00NW0000001YdwC" value="011"/>
 				<!--Descripcion de Producto -->
-				<input type="hidden" id="00NQ0000001wsEp" name="00NQ0000001wsEp" value="Ejemplo"/>
+				<input type="hidden" id="00NW0000001YdwG" name="00NW0000001YdwG" value="Ejemplo"/>
 
 				<!-- Codigo de Plan -->
-				<input type="hidden" id="00NQ0000001wsEf" name="00NQ0000001wsEf" value="<?php echo $_SESSION['Plan']->get_Type(); ?>"/>
+				<input type="hidden" id="00NW0000001YdwB" name="00NW0000001YdwB" value="<?php echo $_SESSION['Plan']->get_Type(); ?>"/>
 				<!--Descripcion de Plan -->
-				<input type="hidden" id="00NQ0000001wsEu" name="00NQ0000001wsEu" value="Ejemplo"/>
+				<input type="hidden" id="00NW0000001YdwF" name="00NW0000001YdwF" value="Ejemplo"/>
 
 				<!--Premio -->
-				<input type="hidden" id="00NQ0000001x9tH" name="00NQ0000001x9tH" value="123"/>			  
+				<input type="hidden" id="00NW0000001h2bA" name="00NW0000001h2bA" value="123"/>			  
 			  <input type="submit" class="btn btn-lg btn-orange" name="submit" value="Enviar">
 			  </p>
 			  <input type="hidden" name="formtype" value="1">			  

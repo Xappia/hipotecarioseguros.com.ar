@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="es">
@@ -82,23 +81,25 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="telefono_area" name="telefono_area" type="text" class="form-control form-control-lg" placeholder="CÓDIGO DE ÁREA (EJ. 11)" data-error="Requerido. Sólo números, sin cero." maxlength="4" pattern="\d{2,3,4}" required>
+                      <input id="00NQ0000001wsEB" name="00NQ0000001wsEB" type="text" onkeydown="validateFirstNumber(this)" onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <input id="telefono_numero" maxlength="8" name="telefono_numero" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error="Requerido. Hasta 8 números, sin 15." maxlength="8" pattern="\d{6,7,8}" required>
-                  <div class="help-block with-errors"></div>
+                  <input id="telefono_numero" maxlength="8" name="telefono_numero" type="phone" class="form-control form-control-lg" onfocus="changePhoneMaxLength(this)" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Hasta 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
+                  <div class="help-block with-errors">
+                    <span id="phone-error" style="color: #ff0000;font-size: 85%;margin: 2px auto auto 4px;display: none;">Verifique su número por favor. La longitud es incorrecta.</span>
+                  </div>
                 </div>
 
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group row">
-                      <label for="horarios" class="col-sm-6 col-form-label-lg">Franja horaria</label>
+                      <label for="00NQ0000001wsEG" class="col-sm-6 col-form-label-lg">Franja horaria</label>
                       <div class="col-sm-6">
-                        <select id="horarios" name="horarios" class="form-control form-control-lg">
+                        <select id="00NQ0000001wsEG" name="00NQ0000001wsEG" class="form-control form-control-lg">
                           <option value="9-12">9 a 12 hs</option>
                           <option value="12-15">12 a 15 hs</option>
                           <option value="15-18">15 a 18 hs</option>
@@ -142,7 +143,7 @@
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="terminos" data-error="Debe aceptar los términos y condiciones para continuar." required>
                     <label class="form-check-label" for="terminos">
-                      <small>ACEPTO LOS <a href="http://www.hipotecarioseguros.com.ar/terminos-y-condiciones/#entienda" target="_blank" title="Click para abrir en una nueva ventana." class="text-dark" style="text-decoration: underline;">TÉRMINOS Y CONDICIONES</a></small>
+                      <small>ACEPTO LOS <a href="http://www.hipotecarioseguros.com.ar/terminos-y-condiciones/#rusia" target="_blank" title="Click para abrir en una nueva ventana." class="text-dark" style="text-decoration: underline;">TÉRMINOS Y CONDICIONES</a></small>
                     </label>
                     <div class="help-block with-errors"></div>
                   </div>
@@ -172,6 +173,7 @@
     <div class="container" id="container-aux">
       <div class="row">
         <div class="col-lg-7 pt-5 pb-5">
+          <img src="assets/img/landing_home_690x250.jpg" class="img-fluid mb-5">
           <h5 class="font-weight-bold mb-4">LA ASISTENCIA DOMICILIARIA GRATUITA INCLUYE:</h5>
           <p>Revisión técnica y puesta a punto de <span class="font-italic font-weight-bold">equipos frío/calor</span>.</p>
           <p><span class="font-italic font-weight-bold">Revisión, reparación y puesta a punto</span> de electrodomésticos de "línea blanca".</p>
@@ -208,6 +210,35 @@
     <script src="assets/js/validator.js"></script>
     <script src="assets/js/init.js"></script>
 
+	<script>
+      function validateFirstNumber(ele) {
+        if (ele.value.charAt(0) == "0") {
+          ele.setAttribute("maxlength", "5");
+        }
+        if (ele.value.charAt(0) != "0") {
+          ele.setAttribute("maxlength", "4");
+        }
+      }
+      function eraseFirstZero(ele) {
+        var s = ele.value;
+        while (s.charAt(0) === '0') {
+          s = s.substr(1);
+          }
+        ele.value = s;
+      }
+      function changePhoneMaxLength(ele) {
+        var newLengthForPhone = 10 - document.getElementById('00NQ0000001wsEB').value.length;
+        ele.setAttribute("maxlength", newLengthForPhone);
+      }
+      function changeAreaMaxLength(ele) {
+        if (document.getElementById("phone").value.length > 6) {
+          var newLengthForArea = 10 - document.getElementById("phone").value.length;
+          ele.setAttribute("maxlength", newLengthForArea);
+        }
+      }
+    </script>
+
+	
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41737234-3"></script>
     <script>

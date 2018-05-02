@@ -1,10 +1,31 @@
 
 $(document).ready(function(e) {
 
-	$("#00NW0000001YdwE").blur(function() {
-		var area = $("#00NW0000001YdwE").val();
-		$("#00NW0000001YdwE").val(area.replace(/^0+/, ''));
+	$("#00NQ0000001wsEB").blur(function() {
+		var area = $("#00NQ0000001wsEB").val();
+		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
 	});
+
+	/*$("#phone").blur(function(){
+		(validate_number_length())?$("#phone-error").hide():$("#phone-error").show();
+	}).keyup(function(){
+        if(validate_number_length()) {
+            $("#btn_enviar").prop("disabled", false);
+            $("#phone-error").hide();
+        } else {
+            $("#btn_enviar").prop("disabled", true);
+        }
+    });
+
+	function validate_number_length(){
+        var valid = false;
+        var maxLength = 10;
+        var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+        if(completeNumber.length == maxLength){
+            valid = true;
+        }
+        return valid;
+	}*/
 
 	$("#formulario").validator().on('submit', function(e) {
 

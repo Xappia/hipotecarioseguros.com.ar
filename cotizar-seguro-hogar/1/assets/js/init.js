@@ -6,7 +6,7 @@ $(document).ready(function(e) {
 		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
 	});
 
-	$("#phone").blur(function(){
+	/*$("#phone").blur(function(){
 		(validate_number_length())?$("#phone-error").hide():$("#phone-error").show();
 	}).keyup(function(){
         if(validate_number_length()) {
@@ -25,7 +25,7 @@ $(document).ready(function(e) {
             valid = true;
         }
         return valid;
-	}
+	}*/
 
 	$("#formulario").validator().on('submit', function(e) {
 

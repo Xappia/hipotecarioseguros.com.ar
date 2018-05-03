@@ -35,6 +35,26 @@ $(document).ready(function(e) {
 	
 	
 	
+	
+	 $("#00NW0000001YdwE").keydown(function(){
+       validateFirstNumber(this);
+    });
+	
+	$("#00NW0000001YdwE").focusout(function(){
+       	eraseFirstZero(this);
+    });
+	
+	$("#phone").focus(function(){
+       	changePhoneMaxLength(this);
+    });
+	
+	
+	
+	
+	
+	
+	
+	
 	function validateFirstNumber(ele) {
 	if (ele.value.charAt(0) == "0") {
 		ele.setAttribute("maxlength", "5");

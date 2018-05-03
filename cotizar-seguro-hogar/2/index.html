@@ -95,14 +95,16 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00NW0000001YdwE" name="00NW0000001YdwE" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' onkeydown="validateFirstNumber(this)" onfocusout="eraseFirstZero(this)" data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+                      <input id="00NW0000001YdwE" name="00NW0000001YdwE" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+					  <!--onkeydown="validateFirstNumber(this)" onfocusout="eraseFirstZero(this)" --> 
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" onfocus="changePhoneMaxLength(this)" data-error='Requerido. Hasta 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
+                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Hasta 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
+				  <!--onfocus="changePhoneMaxLength(this)" --> 
                   <div class="help-block with-errors">
                     <span id="phone-error" style="color: #707070;font-size: 85%;margin: 2px auto auto 4px">Su teléfono no debe incluir más de diez caracteres (incluyendo el código de área).</span>
                   </div>

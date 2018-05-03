@@ -1,6 +1,40 @@
 
 $(document).ready(function(e) {
 
+	$("#dni").blur(function() {
+
+		var dni = $("#dni").val();
+
+		if(dni != "") {
+
+			$.ajax({
+				type: "POST",
+				url: "check_dni.php",
+				data: "dni=" + $("#dni").val(),
+				timeout: 10000,
+				dataType: "json",
+				beforeSend: function() {
+					$("#btn_enviar").prop("disabled", true);
+				},
+				success: function(response) {
+					if(response.success === true) {
+						$("#btn_enviar").prop("disabled", false);
+					} else {
+						alert("Su DNI ya se encuentra registrado en nuestro sistema.")
+						$("#dni").focus();
+						$("#btn_enviar").prop("disabled", true);
+					}
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					//
+				}
+			});
+
+		}
+
+	});
+
+
 	$("#00NQ0000001wsEB").blur(function() {
 		var area = $("#00NQ0000001wsEB").val();
 		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
@@ -66,7 +100,7 @@ $(document).ready(function(e) {
 					}
 				},
 				error: function(jqXHR, textStatus, errorThrown) {
-					alert("Se ha producido un error. Por favor, inténtelo nuevamente.\nStatus: " + textStatus + ".\nError:" + errorThrown);
+					alert("Se ha producido un error. Por favor, intÃ©ntelo nuevamente.\nStatus: " + textStatus + ".\nError:" + errorThrown);
 					$("#btn_enviar").prop("disabled", false);
 				}
 			});

@@ -1,5 +1,38 @@
 $(document).ready(function(e) {
 
+	$("#email").blur(function() {
+
+		var email = $("#email").val();
+
+		if(email != "") {
+
+			$.ajax({
+				type: "POST",
+				url: "check_email.php",
+				data: "email=" + $("#email").val(),
+				timeout: 10000,
+				dataType: "json",
+				beforeSend: function() {
+					$("#btn_enviar").prop("disabled", true);
+				},
+				success: function(response) {
+					if(response.success === true) {
+						$("#btn_enviar").prop("disabled", false);
+					} else {
+						alert("Su email ya se encuentra registrado en nuestro sistema.")
+						$("#email").focus();
+						$("#btn_enviar").prop("disabled", true);
+					}
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					//
+				}
+			});
+
+		}
+
+	});
+
 	$("#00NQ0000001wsEB").blur(function() {
 		var area = $("#00NQ0000001wsEB").val();
 		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
@@ -59,7 +92,7 @@ $(document).ready(function(e) {
 					}
 				},
 				error: function(jqXHR, textStatus, errorThrown) {
-					alert("Se ha producido un error. Por favor, inténtelo nuevamente.\nStatus: " + textStatus + ".\nError:" + errorThrown);
+					alert("Se ha producido un error. Por favor, intÃ©ntelo nuevamente.\nStatus: " + textStatus + ".\nError:" + errorThrown);
 					$("#btn_enviar").prop("disabled", false);
 				}
 			});

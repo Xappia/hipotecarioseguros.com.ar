@@ -1,6 +1,7 @@
 
 $(document).ready(function(e) {
 
+
 	$("#00NW0000001YdwE").blur(function() {
 		var area = $("#00NW0000001YdwE").val();
 		$("#00NW0000001YdwE").val(area.replace(/^0+/, ''));

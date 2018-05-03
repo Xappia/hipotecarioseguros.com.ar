@@ -32,6 +32,37 @@ $(document).ready(function(e) {
 			$("#container-aux").height($(".position-absolute-lg").innerHeight() - 225 + 30);
 		}
 	});
+	
+	
+	
+	function validateFirstNumber(ele) {
+	if (ele.value.charAt(0) == "0") {
+		ele.setAttribute("maxlength", "5");
+	}
+	if (ele.value.charAt(0) != "0") {
+		ele.setAttribute("maxlength", "4");
+	}
+	}
+	function eraseFirstZero(ele) {
+		var s = ele.value;
+		while (s.charAt(0) === '0') {
+			s = s.substr(1);
+		}
+		ele.value = s;
+	}
+	function changePhoneMaxLength(ele) {
+		var newLengthForPhone = 10 - document.getElementById('00NW0000001YdwE').value.length;
+		ele.setAttribute("maxlength", newLengthForPhone);
+	}
+	function changeAreaMaxLength(ele) {
+		if (document.getElementById("phone").value.length > 6) {
+			var newLengthForArea = 10 - document.getElementById("phone").value.length;
+			ele.setAttribute("maxlength", newLengthForArea);
+	  }
+	}
+	
+	
+	
 
 	$("#formulario").validator().on('submit', function(e) {
 
@@ -61,28 +92,4 @@ $(document).ready(function(e) {
 
 });
 
-function validateFirstNumber(ele) {
-	if (ele.value.charAt(0) == "0") {
-		ele.setAttribute("maxlength", "5");
-	}
-	if (ele.value.charAt(0) != "0") {
-		ele.setAttribute("maxlength", "4");
-	}
-}
-function eraseFirstZero(ele) {
-	var s = ele.value;
-	while (s.charAt(0) === '0') {
-		s = s.substr(1);
-	}
-	ele.value = s;
-}
-function changePhoneMaxLength(ele) {
-	var newLengthForPhone = 10 - document.getElementById('00NW0000001YdwE').value.length;
-	ele.setAttribute("maxlength", newLengthForPhone);
-}
-function changeAreaMaxLength(ele) {
-	if (document.getElementById("phone").value.length > 6) {
-		var newLengthForArea = 10 - document.getElementById("phone").value.length;
-		ele.setAttribute("maxlength", newLengthForArea);
-  }
-}
+

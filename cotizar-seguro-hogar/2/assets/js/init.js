@@ -1,9 +1,9 @@
 
 $(document).ready(function(e) {
 
-	$("#00NQ0000001wsEB").blur(function() {
-		var area = $("#00NQ0000001wsEB").val();
-		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
+	$("#00NW0000001YdwE").blur(function() {
+		var area = $("#00NW0000001YdwE").val();
+		$("#00NW0000001YdwE").val(area.replace(/^0+/, ''));
 	});
 
     $("#phone").blur(function(){
@@ -20,7 +20,7 @@ $(document).ready(function(e) {
     function validate_number_length(){
         var valid = false;
         var maxLength = 10;
-        var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+        var completeNumber = $("#00NW0000001YdwE").val() + $("#phone").val();
         if(completeNumber.length == maxLength){
             valid = true;
         }
@@ -60,3 +60,29 @@ $(document).ready(function(e) {
 	});
 
 });
+
+function validateFirstNumber(ele) {
+	if (ele.value.charAt(0) == "0") {
+		ele.setAttribute("maxlength", "5");
+	}
+	if (ele.value.charAt(0) != "0") {
+		ele.setAttribute("maxlength", "4");
+	}
+}
+function eraseFirstZero(ele) {
+	var s = ele.value;
+	while (s.charAt(0) === '0') {
+		s = s.substr(1);
+	}
+	ele.value = s;
+}
+function changePhoneMaxLength(ele) {
+	var newLengthForPhone = 10 - document.getElementById('00NW0000001YdwE').value.length;
+	ele.setAttribute("maxlength", newLengthForPhone);
+}
+function changeAreaMaxLength(ele) {
+	if (document.getElementById("phone").value.length > 6) {
+		var newLengthForArea = 10 - document.getElementById("phone").value.length;
+		ele.setAttribute("maxlength", newLengthForArea);
+  }
+}

@@ -95,7 +95,7 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00NW0000001YdwE" name="00NW0000001YdwE" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' onkeydown="validateFirstNumber(this)" onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)" data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+                      <input id="00NW0000001YdwE" name="00NW0000001YdwE" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' onkeydown="validateFirstNumber(this)" onfocusout="eraseFirstZero(this)" data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
@@ -179,34 +179,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="assets/js/validator.js"></script>
     <script src="assets/js/init.js"></script>
-
-    <script>
-      function validateFirstNumber(ele) {
-        if (ele.value.charAt(0) == "0") {
-          ele.setAttribute("maxlength", "5");
-        }
-        if (ele.value.charAt(0) != "0") {
-          ele.setAttribute("maxlength", "4");
-        }
-      }
-      function eraseFirstZero(ele) {
-        var s = ele.value;
-        while (s.charAt(0) === '0') {
-          s = s.substr(1);
-          }
-        ele.value = s;
-      }
-      function changePhoneMaxLength(ele) {
-        var newLengthForPhone = 10 - document.getElementById('00NW0000001YdwE').value.length;
-        ele.setAttribute("maxlength", newLengthForPhone);
-      }
-      function changeAreaMaxLength(ele) {
-        if (document.getElementById("phone").value.length > 6) {
-          var newLengthForArea = 10 - document.getElementById("phone").value.length;
-          ele.setAttribute("maxlength", newLengthForArea);
-        }
-      }
-    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41737234-3"></script>

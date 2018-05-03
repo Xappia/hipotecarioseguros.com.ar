@@ -16,6 +16,20 @@ $(document).ready(function(e) {
             $("#btn_enviar").prop("disabled", true);
         }
     });
+	
+	$("#phone").focus(function(){
+		changePhoneMaxLength(this);
+	});
+	
+	$("#00NW0000001YdwE").keydown(function(){
+		validateFirstNumber(this);
+	});
+	
+	$("#00NW0000001YdwE").focusout(function(){
+		eraseFirstZero(this);
+	});
+	
+	
 
 	function validate_number_length(){
         var valid = false;

@@ -9,20 +9,20 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/font-awesome.min.css">
 
     <!-- Ionicons -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/ionicons.min.css">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/skins/_all-skins.min.css">
 
     <!-- iCheck -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/all.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/all.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

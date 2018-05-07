@@ -5,25 +5,25 @@
     <title>HIPOTECARIO SEGUROS - EN TIENDA - HOGAR</title>
       <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/fonts/font-awesome.min.css">
 
     <!-- Ionicons -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/ionicons.min.css">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/all-skins.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/all-skins.min.css">
 
     <!-- iCheck -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/all.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/all.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
 
     <!-- Ionicons -->
-    <link rel="stylesheet" href="http://qa-test-ok.com/administrator/public/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/ionicons.min.css">
 	
     <!-- jQuery 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -40,19 +40,19 @@
     
     <!--Este JS si ya lo tienes en tu codigo no lo puedes volver a poner porq te da error, si ya lo tienes omites este -->	
     
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/jquery-1.12.4.js"></script>
 	
-    <link rel="stylesheet" type="text/css" href="http://qa-test-ok.com/administrator/public/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="http://qa-test-ok.com/administrator/public/css/buttons.dataTables.min.css"> 	
+    <link rel="stylesheet" type="text/css" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/css/buttons.dataTables.min.css"> 	
 	
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/dataTables.buttons.min.js"></script>
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/buttons.flash.min.js"></script>
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/jszip.min.js"></script>
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/pdfmake.min.js"></script>
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/vfs_fonts.js"></script>
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/buttons.html5.min.js"></script>
-    <script type="text/javascript" language="javascript" src="http://qa-test-ok.com/administrator/public/js/buttons.print.min.js"></script>	
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/buttons.flash.min.js"></script>
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/jszip.min.js"></script>
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/pdfmake.min.js"></script>
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/vfs_fonts.js"></script>
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" language="javascript" src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/js/buttons.print.min.js"></script>	
 
     @yield('css')
 </head>
@@ -65,7 +65,7 @@
 
             <a href="#" class="logo">
                
-                <img src="http://qa-test-ok.com/administrator/public/images/logow.png">
+                <img src="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/administrator/public/images/logow.png">
             </a>
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->

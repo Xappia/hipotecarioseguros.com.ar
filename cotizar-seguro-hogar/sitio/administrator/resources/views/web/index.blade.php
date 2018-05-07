@@ -38,10 +38,10 @@
 	                </div>
 	                <div class="links">
 	                    <a href="/backendhipotecario/public/preguntas">Preguntas</a>
-	                    <a href="http://qa-test-ok.com/">Planes</a>
-	                    <a href="http://qa-test-ok.com/">Coberturas</a>
-	                    <a href="http://qa-test-ok.com/">Estadísticas</a>
-	                    <a href="http://qa-test-ok.com/">Prospectos</a>
+	                    <a href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/">Planes</a>
+	                    <a href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/">Coberturas</a>
+	                    <a href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/">Estadísticas</a>
+	                    <a href="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/administrator/">Prospectos</a>
 	                </div>
 	            </div>
 	        </div>

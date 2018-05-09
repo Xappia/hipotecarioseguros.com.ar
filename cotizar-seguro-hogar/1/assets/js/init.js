@@ -2,9 +2,9 @@
 $(document).ready(function(e) {
 
 
-	$("#00NQ0000001wsEB").blur(function() {
-		var area = $("#00NQ0000001wsEB").val();
-		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
+	$("#00N5B000001IgcE").blur(function() {
+		var area = $("#00N5B000001IgcE").val();
+		$("#00N5B000001IgcE").val(area.replace(/^0+/, ''));
 	});
 
 	$("#phone").blur(function(){
@@ -22,11 +22,11 @@ $(document).ready(function(e) {
 		changePhoneMaxLength(this);
 	});
 	
-	$("#00NQ0000001wsEB").keydown(function(){
+	$("#00N5B000001IgcE").keydown(function(){
 		validateFirstNumber(this);
 	});
 	
-	$("#00NQ0000001wsEB").focusout(function(){
+	$("#00N5B000001IgcE").focusout(function(){
 		eraseFirstZero(this);
 	});
 	
@@ -35,7 +35,7 @@ $(document).ready(function(e) {
 	function validate_number_length(){
         var valid = false;
         var maxLength = 10;
-        var completeNumber = $("#00NQ0000001wsEB").val() + $("#phone").val();
+        var completeNumber = $("#00N5B000001IgcE").val() + $("#phone").val();
         if(completeNumber.length == maxLength){
             valid = true;
         }

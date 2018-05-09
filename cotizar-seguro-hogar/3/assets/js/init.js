@@ -33,9 +33,9 @@ $(document).ready(function(e) {
 
 	});
 
-	$("#00NQ0000001wsEB").blur(function() {
-		var area = $("#00NQ0000001wsEB").val();
-		$("#00NQ0000001wsEB").val(area.replace(/^0+/, ''));
+	$("#00N5B000001IgcE").blur(function() {
+		var area = $("#00N5B000001IgcE").val();
+		$("#00N5B000001IgcE").val(area.replace(/^0+/, ''));
 	});
 
     $("#telefono_numero").blur(function(){
@@ -52,7 +52,7 @@ $(document).ready(function(e) {
     function validate_number_length(){
         var valid = false;
         var maxLength = 10;
-        var completeNumber = $("#00NQ0000001wsEB").val() + $("#telefono_numero").val();
+        var completeNumber = $("#00N5B000001IgcE").val() + $("#telefono_numero").val();
         if(completeNumber.length == maxLength){
             valid = true;
         }

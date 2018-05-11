@@ -1,9 +1,9 @@
 
 $(document).ready(function(e) {
 
-	$("#00N5B000001IgcE").blur(function() {
-		var area = $("#00N5B000001IgcE").val();
-		$("#00N5B000001IgcE").val(area.replace(/^0+/, ''));
+	$("#00N1N00000P57n1").blur(function() {
+		var area = $("#00N1N00000P57n1").val();
+		$("#00N1N00000P57n1").val(area.replace(/^0+/, ''));
 	});
 
     $("#phone").blur(function(){
@@ -20,7 +20,7 @@ $(document).ready(function(e) {
     function validate_number_length(){
         var valid = false;
         var maxLength = 10;
-        var completeNumber = $("#00N5B000001IgcE").val() + $("#phone").val();
+        var completeNumber = $("#00N1N00000P57n1").val() + $("#phone").val();
         if(completeNumber.length == maxLength){
             valid = true;
         }
@@ -36,11 +36,11 @@ $(document).ready(function(e) {
 	
 	
 	
-	 $("#00N5B000001IgcE").keydown(function(){
+	 $("#00N1N00000P57n1").keydown(function(){
        validateFirstNumber(this);
     });
 	
-	$("#00N5B000001IgcE").focusout(function(){
+	$("#00N1N00000P57n1").focusout(function(){
        	eraseFirstZero(this);
     });
 	

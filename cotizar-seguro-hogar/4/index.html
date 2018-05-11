@@ -81,7 +81,7 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00N5B000001IgcE" name="00N5B000001IgcE" type="text" onkeydown="validateFirstNumber(this)" onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+                      <input id="00N1N00000P57n1" name="00N1N00000P57n1" type="text" onkeydown="validateFirstNumber(this)" onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
@@ -97,9 +97,9 @@
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group row">
-                      <label for="00N5B000001IgcK" class="col-sm-6 col-form-label-lg">Franja horaria</label>
+                      <label for="00N1N00000P57n7" class="col-sm-6 col-form-label-lg">Franja horaria</label>
                       <div class="col-sm-6">
-                        <select id="00N5B000001IgcK" name="00N5B000001IgcK" class="form-control form-control-lg">
+                        <select id="00N1N00000P57n7" name="00N1N00000P57n7" class="form-control form-control-lg">
                           <option value="9-12">9 a 12 hs</option>
                           <option value="12-15">12 a 15 hs</option>
                           <option value="15-18">15 a 18 hs</option>
@@ -227,7 +227,7 @@
         ele.value = s;
       }
       function changePhoneMaxLength(ele) {
-        var newLengthForPhone = 10 - document.getElementById('00N5B000001IgcE').value.length;
+        var newLengthForPhone = 10 - document.getElementById('00N1N00000P57n1').value.length;
         ele.setAttribute("maxlength", newLengthForPhone);
       }
       function changeAreaMaxLength(ele) {

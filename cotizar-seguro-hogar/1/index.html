@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#7ecdb0">
 
-    <meta name="description" content="Cotizar tu seguro del hogar nunca fue tan fácil. Cuesta mucho menos de lo que te imaginás. Es momento de disfrutar de la tranquilidad que vos y tu familia se merecen. COTIZÁ AHORA con la 00N1N00000P57n0 Nro 1 protegiendo hogares en la Argentina. No esperes más.">
+    <meta name="description" content="Cotizar tu seguro del hogar nunca fue tan fácil. Cuesta mucho menos de lo que te imaginás. Es momento de disfrutar de la tranquilidad que vos y tu familia se merecen. COTIZÁ AHORA con la compañía Nro 1 protegiendo hogares en la Argentina. No esperes más.">
     <meta name="author" content="Hipotecario Seguros">
     
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -48,30 +48,30 @@
 
             <div id="formulario_contenedor">
 
-              <form id="dProspect" method="post" class="form" action="https://na78.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" onsubmit="return ValidateForm()">
+              <form role="form" id="formulario" action="https://cs13.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" data-toggle="validator" data-delay="1500" autocomplete="off">
 
-                <input type=hidden name="oid" value="00Do0000000Kvgv">
-                <input type=hidden name="retURL" value="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/1/gracias-por-cotizar.html">
+                <input type=hidden name="oid" value="00DW0000008xGbx">
+                <input type=hidden name="retURL" value="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/final.php">
 
                 <input type="hidden" id="LeadSource" name="LeadSource" value="En-tienda"/>
 
                 <!-- Codigo de Ramo -->
-                <input type="hidden" id="00N1N00000P57n0" name="00N1N00000P57n0" value="002"/>
+                <input type="hidden" id="00NW0000001YdwD" name="00NW0000001YdwD" value="002"/>
                 <!--Descripcion de Ramo -->
-                <input type="hidden" id="00N1N00000P57n4" name="00N1N00000P57n4" value="Hogar"/>
+                <input type="hidden" id="00NW0000001YdwH" name="00NW0000001YdwH" value="Hogar"/>
 
                 <!-- Codigo de Producto -->
-                <input type="hidden" id="00N1N00000P57mz" name="00N1N00000P57mz" value="011"/>
+                <input type="hidden" id="00NW0000001YdwC" name="00NW0000001YdwC" value="011"/>
                 <!--Descripcion de Producto -->
-                <input type="hidden" id="00N1N00000P57n3" name="00N1N00000P57n3" value="Ejemplo"/>
+                <input type="hidden" id="00NW0000001YdwG" name="00NW0000001YdwG" value="Ejemplo"/>
 
                 <!-- Codigo de Plan -->
-                <input type="hidden" id="00N1N00000P57my" name="00N1N00000P57my" value="002"/>
+                <input type="hidden" id="00NW0000001YdwB" name="00NW0000001YdwB" value="002"/>
                 <!--Descripcion de Plan -->
-                <input type="hidden" id="00N1N00000P57n2" name="00N1N00000P57n2" value="Ejemplo"/>
+                <input type="hidden" id="00NW0000001YdwF" name="00NW0000001YdwF" value="Ejemplo"/>
 
                 <!--Premio -->
-                <input type="hidden" id="00N1N00000P57n9" name="00N1N00000P57n9" value=""/>
+                <input type="hidden" id="00NW0000001h2bA" name="00NW0000001h2bA" value=""/>
 
 
                 <div class="form-group">
@@ -97,7 +97,7 @@
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group">
-                      <select id="00N1N00000P57nB" name="00N1N00000P57nB" title="Tipo de teléfono" class="form-control form-control-lg">
+                      <select id="00NW0000001YdwL" name="00NW0000001YdwL" title="Tipo de teléfono" class="form-control form-control-lg">
                         <option value="">--Ninguno--</option>
                         <option value="Celular">Celular</option>
                         <option value="Particular">Particular</option>
@@ -106,16 +106,14 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00N1N00000P57n1" name="00N1N00000P57n1" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required> <!--
-					  onkeydown="validateFirstNumber(this)"  onfocusout="eraseFirstZero(this)" --> 
+                      <input id="00NW0000001YdwE" name="00NW0000001YdwE" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' onkeydown="validateFirstNumber(this)"  onfocusout="eraseFirstZero(this)"  onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)"  data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Hasta 8 números, sin el "15"'  maxlength="8" pattern="\d{6,8}" required>
-				 <!--onfocus="changePhoneMaxLength(this)" --> 
+                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" onfocus="changePhoneMaxLength(this)"  data-error='Requerido. Hasta 8 números, sin el "15"'  maxlength="8" pattern="\d{6,8}" required>
                   <div class="help-block with-errors">
                     <span id="phone-error" style="color: #ff0000;font-size: 85%;margin: 2px auto auto 4px;display: none;">Verifique su número por favor. La longitud es incorrecta.</span>
                   </div>
@@ -124,9 +122,9 @@
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group row">
-                      <label for="00N1N00000P57n7" class="col-sm-6 col-form-label-lg">Franja horaria</label>
+                      <label for="00NW0000001YdwJ" class="col-sm-6 col-form-label-lg">Franja horaria</label>
                       <div class="col-sm-6">
-                        <select id="00N1N00000P57n7" name="00N1N00000P57n7" class="form-control form-control-lg">
+                        <select id="00NW0000001YdwJ" name="00NW0000001YdwJ" class="form-control form-control-lg">
                           <option value="9-12">9 a 12 hs</option>
                           <option value="12-15">12 a 15 hs</option>
                           <option value="15-18">15 a 18 hs</option>
@@ -140,9 +138,9 @@
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group row">
-                      <label for="00N1N00000P57n8" class="col-sm-6 col-form-label-lg">¿Posee tarjeta de crédito?</label>
+                      <label for="00NW0000001YdwK" class="col-sm-6 col-form-label-lg">¿Posee tarjeta de crédito?</label>
                       <div class="col-sm-6">
-                        <select id="00N1N00000P57n8" name="00N1N00000P57n8" class="form-control form-control-lg">
+                        <select id="00NW0000001YdwK" name="00NW0000001YdwK" class="form-control form-control-lg">
                           <option value="Si">Si</option>
                           <option value="No">No</option>
                         </select>
@@ -154,9 +152,9 @@
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group row">
-                      <label for="00N1N00000P57nA" class="col-sm-6 col-form-label-lg">Sexo</label>
+                      <label for="00NW0000001ZLFk" class="col-sm-6 col-form-label-lg">Sexo</label>
                       <div class="col-sm-6">
-                        <select id="00N1N00000P57nA" name="00N1N00000P57nA" class="form-control form-control-lg">
+                        <select id="00NW0000001ZLFk" name="00NW0000001ZLFk" class="form-control form-control-lg">
                           <option value="">--Ninguno--</option>
                           <option value="Masculino">Masculino</option>
                           <option value="Femenino">Femenino</option>
@@ -195,7 +193,7 @@
     <div class="container" id="container-aux">
       <div class="row">
         <div class="col-lg-7 pt-5 pb-5">
-          <img src="assets/img/landing_home_690x250.jpg" class="img-fluid mb-5">
+          <img src="http://www.hipotecarioseguros.com.ar/wp-content/uploads/banners-21.jpg" class="img-fluid mb-5">
           <h5 class="font-weight-bold mb-4">LA ASISTENCIA DOMICILIARIA GRATUITA INCLUYE:</h5>
           <p>Revisión técnica y puesta a punto de <span class="font-italic font-weight-bold">equipos frío/calor</span>.</p>
           <p><span class="font-italic font-weight-bold">Revisión, reparación y puesta a punto</span> de electrodomésticos de "línea blanca".</p>
@@ -233,6 +231,34 @@
     <script src="assets/js/init.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+	
+	<script>
+      function validateFirstNumber(ele) {
+        if (ele.value.charAt(0) == "0") {
+          ele.setAttribute("maxlength", "5");
+        }
+        if (ele.value.charAt(0) != "0") {
+          ele.setAttribute("maxlength", "4");
+        }
+      }
+      function eraseFirstZero(ele) {
+        var s = ele.value;
+        while (s.charAt(0) === '0') {
+          s = s.substr(1);
+          }
+        ele.value = s;
+      }
+      function changePhoneMaxLength(ele) {
+        var newLengthForPhone = 10 - document.getElementById('00NW0000001YdwE').value.length;
+        ele.setAttribute("maxlength", newLengthForPhone);
+      }
+      function changeAreaMaxLength(ele) {
+        if (document.getElementById("phone").value.length > 6) {
+          var newLengthForArea = 10 - document.getElementById("phone").value.length;
+          ele.setAttribute("maxlength", newLengthForArea);
+        }
+      }
+    </script>
 	
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41737234-3"></script>
     <script>

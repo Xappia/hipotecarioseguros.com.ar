@@ -49,29 +49,29 @@
 
             <div id="formulario_contenedor">
 
-              <form role="form" id="formulario" action="https://cs13.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" data-toggle="validator" data-delay="1500" autocomplete="off">
+              <form id="dProspect" method="post" class="form" action="https://na78.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" onsubmit="return ValidateForm()">
 
-                <input type=hidden name="oid" value="00DQ000000EeRBG">
-                <input type=hidden name="retURL" value="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/sitio/final.php">
+                <input type=hidden name="oid" value="00Do0000000Kvgv">
+                <input type=hidden name="retURL" value="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/2/gracias-por-cotizar.html">
                 <input type="hidden" id="LeadSource" name="LeadSource" value="En-tienda"/>
 
                 <!-- Codigo de Ramo -->
-                <input type="hidden" id="00NW0000001YdwD" name="00NW0000001YdwD" value="002"/>
+                <input type="hidden" id="00N1N00000P57n0" name="00N1N00000P57n0" value="002"/>
                 <!--Descripcion de Ramo -->
-                <input type="hidden" id="00NW0000001YdwH" name="00NW0000001YdwH" value="Hogar"/>
+                <input type="hidden" id="00N1N00000P57n4" name="00N1N00000P57n4" value="Hogar"/>
 
                 <!-- Codigo de Producto -->
-                <input type="hidden" id="00NW0000001YdwC" name="00NW0000001YdwC" value="011"/>
+                <input type="hidden" id="00N1N00000P57mz" name="00N1N00000P57mz" value="011"/>
                 <!--Descripcion de Producto -->
-                <input type="hidden" id="00NW0000001YdwG" name="00NW0000001YdwG" value="Ejemplo"/>
+                <input type="hidden" id="00N1N00000P57n3" name="00N1N00000P57n3" value="Ejemplo"/>
 
                 <!-- Codigo de Plan -->
-                <input type="hidden" id="00NW0000001YdwB" name="00NW0000001YdwB" value="002"/>
+                <input type="hidden" id="00N1N00000P57my" name="00N1N00000P57my" value="002"/>
                 <!--Descripcion de Plan -->
-                <input type="hidden" id="00NW0000001YdwF" name="00NW0000001YdwF" value="Ejemplo"/>
+                <input type="hidden" id="00N1N00000P57n2" name="00N1N00000P57n2" value="Ejemplo"/>
 
                 <!--Premio -->
-                <input type="hidden" id="00NW0000001h2bA" name="00NW0000001h2bA" value=""/>
+                <input type="hidden" id="00N1N00000P57n9" name="00N1N00000P57n9" value=""/>
 
                 <div class="form-group">
                   <input id="first_name" maxlength="40" name="first_name" type="text" class="form-control form-control-lg" placeholder="NOMBRE" data-error="Requerido. Mínimo 2 caracteres." data-minlength="2" required>
@@ -86,7 +86,7 @@
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group">
-                      <select id="00NW0000001YdwL" name="00NW0000001YdwL" title="Tipo de telefono" class="form-control form-control-lg">
+                      <select id="00N1N00000P57nB" name="00N1N00000P57nB" title="Tipo de telefono" class="form-control form-control-lg">
                         <option value="">--Ninguno--</option>
                         <option value="Celular">Celular</option>
                         <option value="Particular">Particular</option>
@@ -95,14 +95,16 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00NW0000001YdwE" name="00NW0000001YdwE" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' onkeydown="validateFirstNumber(this)" onfocus="changeAreaMaxLength(this)" onfocusout="eraseFirstZero(this)" data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+                      <input id="00N1N00000P57n1" name="00N1N00000P57n1" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+					  <!--onkeydown="validateFirstNumber(this)" onfocusout="eraseFirstZero(this)" --> 
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" onfocus="changePhoneMaxLength(this)" data-error='Requerido. Hasta 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
+                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Hasta 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
+				  <!--onfocus="changePhoneMaxLength(this)" --> 
                   <div class="help-block with-errors">
                     <span id="phone-error" style="color: #707070;font-size: 85%;margin: 2px auto auto 4px">Su teléfono no debe incluir más de diez caracteres (incluyendo el código de área).</span>
                   </div>
@@ -142,7 +144,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7 pt-5 pb-5">
-          <img src="http://www.hipotecarioseguros.com.ar/wp-content/uploads/banners-21.jpg" class="img-fluid mb-5">
+          <img src="assets/img/landing_home_690x250.jpg" class="img-fluid mb-5">
           <h5 class="font-weight-bold mb-4">LA ASISTENCIA DOMICILIARIA GRATUITA INCLUYE:</h5>
           <p>Revisión técnica y puesta a punto de <span class="font-italic font-weight-bold">equipos frío/calor</span>.</p>
           <p><span class="font-italic font-weight-bold">Revisión, reparación y puesta a punto</span> de electrodomésticos de "línea blanca".</p>
@@ -179,34 +181,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="assets/js/validator.js"></script>
     <script src="assets/js/init.js"></script>
-
-    <script>
-      function validateFirstNumber(ele) {
-        if (ele.value.charAt(0) == "0") {
-          ele.setAttribute("maxlength", "5");
-        }
-        if (ele.value.charAt(0) != "0") {
-          ele.setAttribute("maxlength", "4");
-        }
-      }
-      function eraseFirstZero(ele) {
-        var s = ele.value;
-        while (s.charAt(0) === '0') {
-          s = s.substr(1);
-          }
-        ele.value = s;
-      }
-      function changePhoneMaxLength(ele) {
-        var newLengthForPhone = 10 - document.getElementById('00NW0000001YdwE').value.length;
-        ele.setAttribute("maxlength", newLengthForPhone);
-      }
-      function changeAreaMaxLength(ele) {
-        if (document.getElementById("phone").value.length > 6) {
-          var newLengthForArea = 10 - document.getElementById("phone").value.length;
-          ele.setAttribute("maxlength", newLengthForArea);
-        }
-      }
-    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41737234-3"></script>

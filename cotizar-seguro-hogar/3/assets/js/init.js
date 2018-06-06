@@ -1,5 +1,7 @@
 $(document).ready(function(e) {
 
+	$("#phone-error").hide();
+
 	$("#email").blur(function() {
 
 		var email = $("#email").val();
@@ -92,7 +94,7 @@ $(document).ready(function(e) {
 					}
 				},
 				error: function(jqXHR, textStatus, errorThrown) {
-					alert("Se ha producido un error. Por favor, intÃ©ntelo nuevamente.\nStatus: " + textStatus + ".\nError:" + errorThrown);
+					alert("Se ha producido un error. Por favor, intÃƒÂ©ntelo nuevamente.\nStatus: " + textStatus + ".\nError:" + errorThrown);
 					$("#btn_enviar").prop("disabled", false);
 				}
 			});

@@ -90,7 +90,7 @@ $(document).ready(function(e) {
 		ele.value = s;
 	}
 	function changePhoneMaxLength(ele) {
-		var newLengthForPhone = 10 - document.getElementById('00NW0000001YdwE').value.length;
+		var newLengthForPhone = 10 - document.getElementById('00N1N00000P57n1').value.length;
 		ele.setAttribute("maxlength", newLengthForPhone);
 	}
 	function changeAreaMaxLength(ele) {

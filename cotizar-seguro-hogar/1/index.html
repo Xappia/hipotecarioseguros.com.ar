@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#7ecdb0">
 
-    <meta name="description" content="Cotizar tu seguro del hogar nunca fue tan fácil. Cuesta mucho menos de lo que te imaginás. Es momento de disfrutar de la tranquilidad que vos y tu familia se merecen. COTIZÁ AHORA con la 00N1N00000P57n0 Nro 1 protegiendo hogares en la Argentina. No esperes más.">
+    <meta name="description" content="Cotizar tu seguro del hogar nunca fue tan fácil. Cuesta mucho menos de lo que te imaginás. Es momento de disfrutar de la tranquilidad que vos y tu familia se merecen. COTIZÁ AHORA con la compañía Nro 1 protegiendo hogares en la Argentina. No esperes más.">
     <meta name="author" content="Hipotecario Seguros">
     
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -23,7 +23,7 @@
 
     <meta property="og:title" content="Cotizá tu seguro de hogar – HIPOTECARIO SEGUROS">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="//hipotecarioseguros.com.ar/cotizar-seguro-hogar/2/">
+    <meta property="og:url" content="//hipotecarioseguros.com.ar/cotizar-seguro-hogar/1/">
     <meta property="og:image" content="//hipotecarioseguros.com.ar/cotizar-seguro-hogar/assets/img/og_bhse.jpg">
     <meta property="og:site_name" content="Hipotecario Seguros">
     <meta property="og:description" content="Cotizar tu seguro del hogar nunca fue tan fácil. Cuesta mucho menos de lo que te imaginás. Es momento de disfrutar de la tranquilidad que vos y tu familia se merecen. COTIZÁ AHORA con la compañía Nro 1 protegiendo hogares en la Argentina. No esperes más.">
@@ -49,9 +49,13 @@
 
               <form id="dProspect" method="post" class="form" action="https://na78.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" onsubmit="return ValidateForm()">
 
-                <input type=hidden name="oid" value="00Do0000000Kvgv">
-                <input type=hidden name="retURL" value="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/1/gracias-por-cotizar.html">
+			  <!--UTM Parameters! -->
+               <input type="hidden" name="00N1N00000P66md" id="00N1N00000P66md" value="">
+                <input type="hidden" name="00N1N00000P66mc" id="00N1N00000P66mc" value="">
+                <input type="hidden" name="00N1N00000P66mb" id="00N1N00000P66mb" value="">
 
+                <input type=hidden name="oid" value="00Do0000000Kvgv">
+                <input type=hidden name="retURL" value="http://hipotecarioseguros.com.ar/cotizar-seguro-hogar/2/gracias-por-cotizar.html">
                 <input type="hidden" id="LeadSource" name="LeadSource" value="En-tienda"/>
 
                 <!-- Codigo de Ramo -->
@@ -72,7 +76,6 @@
                 <!--Premio -->
                 <input type="hidden" id="00N1N00000P57n9" name="00N1N00000P57n9" value=""/>
 
-
                 <div class="form-group">
                   <input id="first_name" maxlength="40" name="first_name" type="text" class="form-control form-control-lg" placeholder="NOMBRE" data-error="Requerido. Mínimo 2 caracteres." data-minlength="2" required>
                   <div class="help-block with-errors"></div>
@@ -83,20 +86,10 @@
                   <div class="help-block with-errors"></div>
                 </div>
 
-                <div class="form-group">
-                  <input id="00No000000Cm63X" maxlength="80" name="00No000000Cm63X" type="text" class="form-control form-control-lg" placeholder="DNI" data-error="Requerido. Sólo números." pattern="\d{7,8}" required>
-                  <div class="help-block with-errors"></div>
-                </div>
-
-                <div class="form-group">
-                  <input id="email" maxlength="80" name="email" type="email" class="form-control form-control-lg" placeholder="MAIL" data-error="Es requerido un email válido." required>
-                  <div class="help-block with-errors"></div>
-                </div>
-
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group">
-                      <select id="00N1N00000P57nB" name="00N1N00000P57nB" title="Tipo de teléfono" class="form-control form-control-lg">
+                      <select id="00N1N00000P57nB" name="00N1N00000P57nB" title="Tipo de telefono" class="form-control form-control-lg">
                         <option value="">--Ninguno--</option>
                         <option value="Celular">Celular</option>
                         <option value="Particular">Particular</option>
@@ -105,64 +98,24 @@
                   </div>
                   <div class="col">
                     <div class="form-group">
-                      <input id="00N1N00000P57n1" name="00N1N00000P57n1" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required> <!--
-					  onkeydown="validateFirstNumber(this)"  onfocusout="eraseFirstZero(this)" --> 
+                      <input id="00N1N00000P57n1" name="00N1N00000P57n1" type="text" class="form-control form-control-lg" placeholder='CÓDIGO DE ÁREA SIN EL "0"' data-error='Requerido. Sólo números, sin el "0"' maxlength="4" pattern="\d{2,4}" required>
+					  <!--onkeydown="validateFirstNumber(this)" onfocusout="eraseFirstZero(this)" --> 
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Hasta 8 números, sin el "15"'  maxlength="8" pattern="\d{6,8}" required>
-				 <!--onfocus="changePhoneMaxLength(this)" --> 
+                  <input id="phone" name="phone" type="phone" class="form-control form-control-lg" placeholder="TELÉFONO SIN EL 15 (EJ. 12341234)" data-error='Requerido. Hasta 8 números, sin el "15"' maxlength="8" pattern="\d{6,8}" required>
+				  <!--onfocus="changePhoneMaxLength(this)" --> 
                   <div class="help-block with-errors">
-                    <span id="phone-error" style="color: #ff0000;font-size: 85%;margin: 2px auto auto 4px;display: none;">Verifique su número por favor. La longitud es incorrecta.</span>
+                    <span id="phone-error" style="color: #707070;font-size: 85%;margin: 2px auto auto 4px">Su teléfono no debe incluir más de diez caracteres (incluyendo el código de área).</span>
                   </div>
                 </div>
 
-                <div class="form-row">
-                  <div class="col">
-                    <div class="form-group row">
-                      <label for="00N1N00000P57n7" class="col-sm-6 col-form-label-lg">Franja horaria</label>
-                      <div class="col-sm-6">
-                        <select id="00N1N00000P57n7" name="00N1N00000P57n7" class="form-control form-control-lg">
-                          <option value="9-12">9 a 12 hs</option>
-                          <option value="12-15">12 a 15 hs</option>
-                          <option value="15-18">15 a 18 hs</option>
-                          <option value="18-21">18 a 21 hs</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="col">
-                    <div class="form-group row">
-                      <label for="00N1N00000P57n8" class="col-sm-6 col-form-label-lg">¿Posee tarjeta de crédito?</label>
-                      <div class="col-sm-6">
-                        <select id="00N1N00000P57n8" name="00N1N00000P57n8" class="form-control form-control-lg">
-                          <option value="Si">Si</option>
-                          <option value="No">No</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="col">
-                    <div class="form-group row">
-                      <label for="00N1N00000P57nA" class="col-sm-6 col-form-label-lg">Sexo</label>
-                      <div class="col-sm-6">
-                        <select id="00N1N00000P57nA" name="00N1N00000P57nA" class="form-control form-control-lg">
-                          <option value="">--Ninguno--</option>
-                          <option value="Masculino">Masculino</option>
-                          <option value="Femenino">Femenino</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form-group">
+                  <input id="email" maxlength="80" name="email" type="email" class="form-control form-control-lg" placeholder="MAIL" data-error="Es requerido un email válido." required>
+                  <div class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">
@@ -191,10 +144,11 @@
     </div>
 
 
-    <div class="container" id="container-aux">
+    <div class="container">
       <div class="row">
         <div class="col-lg-7 pt-5 pb-5">
-           <img src="http://www.hipotecarioseguros.com.ar/wp-content/uploads/banners-21.jpg" class="img-fluid mb-5">
+          <img src="http://www.hipotecarioseguros.com.ar/wp-content/uploads/banners-21.jpg" class="img-fluid mb-5">
+          
           <h5 class="font-weight-bold mb-4">LA ASISTENCIA DOMICILIARIA GRATUITA INCLUYE:</h5>
           <p>Revisión técnica y puesta a punto de <span class="font-italic font-weight-bold">equipos frío/calor</span>.</p>
           <p><span class="font-italic font-weight-bold">Revisión, reparación y puesta a punto</span> de electrodomésticos de "línea blanca".</p>
@@ -225,6 +179,7 @@
       </div>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
@@ -232,7 +187,6 @@
     <script src="assets/js/init.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-	
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41737234-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

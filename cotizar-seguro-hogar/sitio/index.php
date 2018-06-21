@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if(isset($_REQUEST["utm_source"]))   { $_SESSION["utm_source"]   = $_REQUEST["utm_source"];   } else { $_SESSION["utm_source"]   = ""; }
+if(isset($_REQUEST["utm_medium"]))   { $_SESSION["utm_medium"]   = $_REQUEST["utm_medium"];   } else { $_SESSION["utm_medium"]   = ""; }
+if(isset($_REQUEST["utm_campaign"])) { $_SESSION["utm_campaign"] = $_REQUEST["utm_campaign"]; } else { $_SESSION["utm_campaign"] = ""; }
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>

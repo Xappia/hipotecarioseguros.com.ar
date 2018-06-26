@@ -144,20 +144,7 @@
 			  </p>
 			  <input type="hidden" name="formtype" value="0">
 
-              <script>
-			  $(document).ready(function(e) {
-				   var utm_source = localStorage.getItem('utm_source');
-				   var utm_medium = localStorage.getItem('utm_medium');
-				   var utm_campaign = localStorage.getItem('utm_campaign');
-				   
-				   $("#00N1N00000P66md").val(utm_source);
-				   $("#00N1N00000P66mc").val(utm_medium);
-				  $("#00N1N00000P66mb").val(utm_campaign);
-			  
-			  });
-			  
-			  </script>
-			  
+              
 			  <!--utm_source -->
 			  <input type="hidden" name="00N1N00000P66md" id="00N1N00000P66md" value="">
 			  <!--utm_medium -->
@@ -184,6 +171,18 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mask.js"></script>
 	<script>
+	
+		$(document).ready(function(){
+			var utm_source = localStorage.getItem('utm_source');
+			var utm_medium = localStorage.getItem('utm_medium');
+			var utm_campaign = localStorage.getItem('utm_campaign');
+					   
+			$("#00N1N00000P66md").val(utm_source);
+			$("#00N1N00000P66mc").val(utm_medium);
+			$("#00N1N00000P66mb").val(utm_campaign);
+				   
+		});
+				   
 		function letterOnly(e) {
 			key = e.keyCode || e.which;
 			keyMthod = String.fromCharCode(key).toString();
@@ -192,6 +191,7 @@
 				return false;
 			  }
 		}
+		
 		
 		function disableBack(){
 			window.location.hash="no-back-button";

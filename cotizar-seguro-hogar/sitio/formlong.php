@@ -179,20 +179,7 @@
 			  <input type="hidden" name="formtype" value="1">
 
 			  
-			  <script>
-			  
-			   $(document).ready(function(e) {
-				   var utm_source = localStorage.getItem('utm_source');
-				   var utm_medium = localStorage.getItem('utm_medium');
-				   var utm_campaign = localStorage.getItem('utm_campaign');
-				   
-				   $("#00N1N00000P66md").val(utm_source);
-				   $("#00N1N00000P66mc").val(utm_medium);
-				   $("#00N1N00000P66mb").val(utm_campaign);
-			  
-				});
-			  
-			  </script>
+			
 			  
 			  <!--utm_source -->
 			  <input type="hidden" name="00N1N00000P66md" id="00N1N00000P66md" value="">
@@ -222,6 +209,15 @@
     <script src="js/jquery.mask.js"></script>
     <script type="text/javascript">
 		$(document).ready(function(){
+					var utm_source = localStorage.getItem('utm_source');
+				   var utm_medium = localStorage.getItem('utm_medium');
+				   var utm_campaign = localStorage.getItem('utm_campaign');
+				   
+				   $("#00N1N00000P66md").val(utm_source);
+				   $("#00N1N00000P66mc").val(utm_medium);
+				   $("#00N1N00000P66mb").val(utm_campaign);
+			
+			
 		$('#tdc').mask('0000-0000-0000-0000');
 		});
 		function letterOnly(e) {

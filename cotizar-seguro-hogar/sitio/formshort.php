@@ -177,9 +177,9 @@
 			var utm_medium = localStorage.getItem('utm_medium');
 			var utm_campaign = localStorage.getItem('utm_campaign');
 					   
-			$("#00N1N00000P66md").val(utm_source);
-			$("#00N1N00000P66mc").val(utm_medium);
-			$("#00N1N00000P66mb").val(utm_campaign);
+			if (utm_source <> 'undefined') $("#00N1N00000P66md").val(utm_source);
+			if (utm_medium <> 'undefined') $("#00N1N00000P66mc").val(utm_medium);
+			if (utm_campaign <> 'undefined') $("#00N1N00000P66mb").val(utm_campaign);
 				   
 		});
 				   

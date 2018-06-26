@@ -1,14 +1,3 @@
-<?php
-
-//session_start();
-
-$utm_source   = $_SESSION["utm_source"];
-$utm_medium   = $_SESSION["utm_medium"];
-$utm_campaign = $_SESSION["utm_campaign"];
-
-?>
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -189,9 +178,25 @@ $utm_campaign = $_SESSION["utm_campaign"];
 			  </p>
 			  <input type="hidden" name="formtype" value="1">
 
-			  <input type="hidden" name="00N1N00000P66md" id="00N1N00000P66md" value="<?php echo $utm_source; ?>">
-              <input type="hidden" name="00N1N00000P66mc" id="00N1N00000P66mc" value="<?php echo $utm_medium ; ?>">
-              <input type="hidden" name="00N1N00000P66mb" id="00N1N00000P66mb" value="<?php echo $utm_campaign; ?>">
+			  
+			  <script>
+			  
+			   var utm_source = localStorage.getItem('utm_source');
+			   var utm_medium = localStorage.getItem('utm_medium');
+			   var utm_campaign = localStorage.getItem('utm_campaign');
+			   
+			   $("#00N1N00000P66md").val(utm_source);
+			   $("#00N1N00000P66mc").val(utm_medium);
+	           $("#00N1N00000P66mb").val(utm_campaign);
+			  
+			  </script>
+			  
+			  <!--utm_source -->
+			  <input type="hidden" name="00N1N00000P66md" id="00N1N00000P66md" value="">
+			  <!--utm_medium -->
+              <input type="hidden" name="00N1N00000P66mc" id="00N1N00000P66mc" value="">
+			  <!--utm_campaign -->
+              <input type="hidden" name="00N1N00000P66mb" id="00N1N00000P66mb" value="">
 
 
             </form>

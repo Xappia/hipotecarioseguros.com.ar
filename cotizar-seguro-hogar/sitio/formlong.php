@@ -181,13 +181,16 @@
 			  
 			  <script>
 			  
-			   var utm_source = localStorage.getItem('utm_source');
-			   var utm_medium = localStorage.getItem('utm_medium');
-			   var utm_campaign = localStorage.getItem('utm_campaign');
-			   
-			   $("#00N1N00000P66md").val(utm_source);
-			   $("#00N1N00000P66mc").val(utm_medium);
-	           $("#00N1N00000P66mb").val(utm_campaign);
+			   $(document).ready(function(e) {
+				   var utm_source = localStorage.getItem('utm_source');
+				   var utm_medium = localStorage.getItem('utm_medium');
+				   var utm_campaign = localStorage.getItem('utm_campaign');
+				   
+				   $("#00N1N00000P66md").val(utm_source);
+				   $("#00N1N00000P66mc").val(utm_medium);
+				   $("#00N1N00000P66mb").val(utm_campaign);
+			  
+				});
 			  
 			  </script>
 			  

@@ -32,15 +32,7 @@ if(isset($_REQUEST["utm_campaign"])) { $_SESSION["utm_campaign"] = $_REQUEST["ut
   <body class="">
   
   <script>
-		var utm_source = getUrlParameter('utm_source');
-		var utm_medium = getUrlParameter('utm_medium');
-		var utm_campaign = getUrlParameter('utm_campaign');
   
-  
-		localStorage.setItem('utm_source', utm_source);
-		localStorage.setItem('utm_medium', utm_medium);
-		localStorage.setItem('utm_campaign', utm_campaign);
-		
 		var getUrlParameter = function getUrlParameter(sParam) {
 			var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
 			for (i = 0; i < sURLVariables.length; i++) {
@@ -50,6 +42,16 @@ if(isset($_REQUEST["utm_campaign"])) { $_SESSION["utm_campaign"] = $_REQUEST["ut
 					}
 				}
 		};
+		var utm_source = getUrlParameter('utm_source');
+		var utm_medium = getUrlParameter('utm_medium');
+		var utm_campaign = getUrlParameter('utm_campaign');
+  
+  
+		localStorage.setItem('utm_source', utm_source);
+		localStorage.setItem('utm_medium', utm_medium);
+		localStorage.setItem('utm_campaign', utm_campaign);
+		
+		
   </script>
 
     <div class="site-wrapper background-blue-green">

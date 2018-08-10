@@ -10,3 +10,5 @@ wp-content/uploads/wp-clone/
 cotizar-seguro-hogar/sitio/administrator/.env
 cotizar-seguro-hogar/sitio/cl_Business/conn/Connection.php
 bhse/Wordpress_BACKUP_20180202.zip
+cotizar-seguro-hogar/sitio/administrator/vendor/phpunit/php-code-coverage/tests/_files/Report/HTML/CoverageForClassWithAnonymousFunction/source_with_class_and_anonymous_function.php.html
+cotizar-seguro-hogar/sitio/administrator/vendor/phpunit/php-code-coverage/tests/_files/Report/XML/CoverageForClassWithAnonymousFunction/source_with_class_and_anonymous_function.php.xml

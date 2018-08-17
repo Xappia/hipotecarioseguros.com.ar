@@ -151,21 +151,7 @@
 	</div>
 	</noscript>
 
-	<!-- Google Code for Conversi&oacute;n Hipotecario Seguros Conversion Page -->
-	<script type="text/javascript">
-	/* <![CDATA[ */
-		var google_conversion_id = 832097181;
-		var google_conversion_label = "u-PVCIf0hXYQnZfjjAM";
-		var google_remarketing_only = false;
-		/* ]]> */
-	</script>
-	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-	</script>
-	<noscript>
-	<div style="display:inline;">
-		<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/832097181/?label=u-PVCIf0hXYQnZfjjAM&amp;guid=ON&amp;script=0"/>
-	</div>
-	</noscript>
+	
 
 
     <!-- Bootstrap core JavaScript

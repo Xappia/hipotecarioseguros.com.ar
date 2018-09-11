@@ -161,6 +161,25 @@
 	<!-- Pixel Clickear-->
 	<img src="https://my.pampanetwork.com/scripts/sale.php?AccountId=40fc2393&TotalCost=0&OrderID={OrderId}&ActionCode=lead&CampaignId=af198dc9" width="1" height="1" >
 	
+	
+	<!--
+	Event snippet for Hipotecario Pixel Prueba on https://www.zenithmedia.com: Please do not remove.
+	Place this snippet on pages with events you’re tracking. 
+	Creation date: 09/03/2018
+	-->
+	<script>
+	  gtag('event', 'conversion', {
+		'allow_custom_scripts': true,
+		'send_to': 'DC-8888877/invmedia/i9yjsf4r+standard'
+	  });
+	</script>
+	<noscript>
+		<img src="https://ad.doubleclick.net/ddm/activity/src=8888877;type=invmedia;cat=i9yjsf4r;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=1?" width="1" height="1" alt=""/>
+	</noscript>
+	<!-- End of event snippet: Please do not remove -->
+
+	
+	
     <!-- Tracking Fin -->
 
 

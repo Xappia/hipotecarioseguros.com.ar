@@ -78,7 +78,7 @@ function choose_plan(){
 		else
 		{
 			echo "<script>console.log( 'Debug Objects, entro al else: " . $TypePlan . "' );</script>";
-			echo "<script>console.log( 'Debug Objects, entro al else: " . $_SESSION['lQuestion'] . "' );</script>";
+			echo "<script>console.log( 'Debug Objects, entro al else: " . $_SESSION['lQuestion'][3]->get_OptionalArg() . "' );</script>";
 			$index = 0;
 			
 			$plans = array("TREC" => $_SESSION['Scoring']["TREC"], "TREM" => $_SESSION['Scoring']["TREM"], "TREB" => $_SESSION['Scoring']["TREB"]);

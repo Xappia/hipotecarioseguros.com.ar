@@ -157,7 +157,7 @@ function choose_plan(){
 				}
 			}	
 			echo "<script>console.log( 'Debug Objects, entro al FINAL else: " . $TypePlan . "' );</script>";
-			
+			$TypePlan = "RCB";
 			//$_SESSION['Scoring']["TREC"]
 			//$_SESSION['Scoring']["TREM"]
 			//$_SESSION['Scoring']["TREB"]

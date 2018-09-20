@@ -131,8 +131,10 @@ function choose_plan(){
 						else
 							if($indexPlan[0] == "TREM" || $indexPlan[2] == "TREM")
 								$TypePlan = "TREM";
-							else
-								$TypePlan = "TREB";					
+							else{
+								$TypePlan = "TREB";	
+								echo "<script>console.log( 'Estoy entrando aca la puta madreee!! " . $TypePlan . "' );</script>";
+							}				
 					}
 					else
 					{

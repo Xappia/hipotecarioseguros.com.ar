@@ -147,7 +147,13 @@ function choose_plan(){
 				}
 			}	
 			
-			$TypePlan = "RCB";
+			
+			//De momento como no se puede deshabilitar estos tres tipos de planes vamos a hacer que si toca uno de electrodomesticos vamos a poner uno de los de Robo.
+			if ($TypePlan == "TREC") $TypePlan = "RCC";
+			if ($TypePlan == "TREM") $TypePlan = "RCM";
+			if ($TypePlan == "TREB") $TypePlan = "RCB";
+			
+			
 			//$_SESSION['Scoring']["TREC"]
 			//$_SESSION['Scoring']["TREM"]
 			//$_SESSION['Scoring']["TREB"]

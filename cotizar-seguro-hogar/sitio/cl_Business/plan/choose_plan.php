@@ -77,7 +77,7 @@ function choose_plan(){
 		}
 		else
 		{
-			echo "<script>console.log( 'Debug Objects, entro al else: " . $TypePlan . "' );</script>";
+			
 			$index = 0;
 			
 			$plans = array("TREC" => $_SESSION['Scoring']["TREC"], "TREM" => $_SESSION['Scoring']["TREM"], "TREB" => $_SESSION['Scoring']["TREB"]);
@@ -103,14 +103,7 @@ function choose_plan(){
 			}
 			else
 			{
-				echo "<script>console.log( 'Debug Objects, entro al SEGUNDO else: " . $indexPlanValue[0] . "' );</script>";
-				echo "<script>console.log( 'Debug Objects, entro al SEGUNDO else: " . $indexPlanValue[1] . "' );</script>";
-				echo "<script>console.log( 'Debug Objects, entro al SEGUNDO else: " . $indexPlanValue[1] . "' );</script>";
-				var_dump($indexPlanValue);
 				
-				echo "<script>console.log('Debug Objects, entro al SEGUNDO else:' . $indexPlanValue[0] . ');</script>";
-				echo "<script>console.log('Debug Objects, entro al SEGUNDO else:' . $indexPlanValue[1] . ');</script>";
-				echo "<script>console.log('Debug Objects, entro al SEGUNDO else:' . var_dump($indexPlanValue). ');</script>";
 			
 				if($indexPlanValue[0] == $indexPlanValue[1])
 				{
@@ -120,8 +113,6 @@ function choose_plan(){
 						if($indexPlan[0] == "TREM" || $indexPlan[1] == "TREM")
 							$TypePlan = "TREM";
 						else{
-							echo "<script>console.log( 'Estoy entrando aca la puta madreee!! " . $TypePlan . "' );</script>";
-									
 							$TypePlan = "TREB";	
 						}				
 				}
@@ -136,7 +127,6 @@ function choose_plan(){
 								$TypePlan = "TREM";
 							else{
 								$TypePlan = "TREB";	
-								echo "<script>console.log( 'Estoy entrando aca la puta madreee!! " . $TypePlan . "' );</script>";
 							}				
 					}
 					else
@@ -156,7 +146,7 @@ function choose_plan(){
 					}
 				}
 			}	
-			echo "<script>console.log( 'Debug Objects, entro al FINAL else: " . $TypePlan . "' );</script>";
+			
 			$TypePlan = "RCB";
 			//$_SESSION['Scoring']["TREC"]
 			//$_SESSION['Scoring']["TREM"]
@@ -168,7 +158,7 @@ function choose_plan(){
 	//$TypePlan = "RCB";
 	
 	$mysqli = open_conection();
-	
+	echo "<script>console.log( 'Debug Objects, entro al FINAL else: " . $TypePlan . "' );</script>";
 	$query = "SELECT `id`, `type`, `plan`, `planlabel`, `image`, `amountplan`, `costdaylabel`, `costday`, `coverage1label1`, `coverage1`, `coverage1label2`, `amount1`, `coverage2label1`, `coverage2`, `coverage2label2`, `amount2`, `buttonlabel`, `buttonlabel2`, `buttonlabel3`, `randombutton`, `footlabel`, `coveragepdf` FROM `mplan` WHERE `type` = '".$TypePlan."'";
 	
 	$result = $mysqli->query($query);

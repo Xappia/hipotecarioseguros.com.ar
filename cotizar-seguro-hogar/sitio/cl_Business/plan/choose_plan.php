@@ -107,6 +107,10 @@ function choose_plan(){
 				echo "<script>console.log( 'Debug Objects, entro al SEGUNDO else: " . $indexPlanValue[1] . "' );</script>";
 				echo "<script>console.log( 'Debug Objects, entro al SEGUNDO else: " . $indexPlanValue[1] . "' );</script>";
 				var_dump($indexPlanValue);
+				
+				echo "<script>console.log('Debug Objects, entro al SEGUNDO else:' . $indexPlanValue[0] . ');</script>";
+				echo "<script>console.log('Debug Objects, entro al SEGUNDO else:' . $indexPlanValue[1] . ');</script>";
+				echo "<script>console.log('Debug Objects, entro al SEGUNDO else:' . var_dump($indexPlanValue). ');</script>";
 			
 				if($indexPlanValue[0] == $indexPlanValue[1])
 				{

@@ -158,8 +158,8 @@ function choose_plan(){
 	//$TypePlan = "RCB";
 	
 	$mysqli = open_conection();
-	echo "<script>console.log( 'Debug Objects, entro al FINAL else: " . $TypePlan . "' );</script>";
-	$query = "SELECT `id`, `type`, `plan`, `planlabel`, `image`, `amountplan`, `costdaylabel`, `costday`, `coverage1label1`, `coverage1`, `coverage1label2`, `amount1`, `coverage2label1`, `coverage2`, `coverage2label2`, `amount2`, `buttonlabel`, `buttonlabel2`, `buttonlabel3`, `randombutton`, `footlabel`, `coveragepdf` FROM `mplan` WHERE `type` = '".$TypePlan."'";
+	//echo "<script>console.log( 'Debug Objects, entro al FINAL else: " . $TypePlan . "' );</script>";
+	$query = "SELECT `id`, `type`, `plan`, `planlabel`, `image`, `amountplan`, `costdaylabel`, `costday`, `coverage1label1`, `coverage1`, `coverage1label2`, `amount1`, `coverage2label1`, `coverage2`, `coverage2label2`, `amount2`, `buttonlabel`, `buttonlabel2`, `buttonlabel3`, `randombutton`, `footlabel`, `coveragepdf` FROM `mplan` WHERE `type` = '".$TypePlan."' ";
 	
 	$result = $mysqli->query($query);
 

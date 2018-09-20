@@ -78,7 +78,6 @@ function choose_plan(){
 		else
 		{
 			echo "<script>console.log( 'Debug Objects, entro al else: " . $TypePlan . "' );</script>";
-			echo "<script>console.log( 'Debug Objects, entro al else: " . $_SESSION['lQuestion'][3]->get_OptionalArg() . "' );</script>";
 			$index = 0;
 			
 			$plans = array("TREC" => $_SESSION['Scoring']["TREC"], "TREM" => $_SESSION['Scoring']["TREM"], "TREB" => $_SESSION['Scoring']["TREB"]);
@@ -104,6 +103,11 @@ function choose_plan(){
 			}
 			else
 			{
+				echo "<script>console.log( 'Debug Objects, entro al SEGUNDO else: " . $indexPlanValue[0] . "' );</script>";
+				echo "<script>console.log( 'Debug Objects, entro al SEGUNDO else: " . $indexPlanValue[1] . "' );</script>";
+				echo "<script>console.log( 'Debug Objects, entro al SEGUNDO else: " . $indexPlanValue[1] . "' );</script>";
+				var_dump($indexPlanValue);
+			
 				if($indexPlanValue[0] == $indexPlanValue[1])
 				{
 					if($indexPlan[0] == "TREC" || $indexPlan[1] == "TREC")
@@ -140,7 +144,9 @@ function choose_plan(){
 						}
 					}
 				}
-			}			
+			}	
+			echo "<script>console.log( 'Debug Objects, entro al FINAL else: " . $TypePlan . "' );</script>";
+			
 			//$_SESSION['Scoring']["TREC"]
 			//$_SESSION['Scoring']["TREM"]
 			//$_SESSION['Scoring']["TREB"]

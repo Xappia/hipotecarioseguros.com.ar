@@ -38,6 +38,8 @@ include "cl_Business/Values.php";
       </header>
 
       <main role="main" class="mh-60">
+	  
+		<?php echo '<script>console.log('.count($_SESSION['CoveragePlan']).')</script>';?>
         <h4 class="color-black uppercase mb-20">te garantizamos las siguientes coberturas</h4>
         <div class="row mw-15">
           <div class="col-lg-6 col-md-6 col-xs-12">

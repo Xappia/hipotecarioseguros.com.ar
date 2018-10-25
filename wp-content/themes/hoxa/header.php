@@ -22,6 +22,7 @@ if ( ! isset( $content_width ) ){
 <?php devn_meta(); ?>
 <title><?php devn_title(); ?></title>
 <?php wp_head(); ?>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 </head>
 <body <?php body_class(); ?>>
 	<div id="main" class="layout-<?php echo $devn_settings['layout']; echo ' '.$post->post_name; ?>">

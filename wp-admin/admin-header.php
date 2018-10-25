@@ -171,6 +171,8 @@ if ( is_network_admin() )
 $admin_body_class .= ' no-customize-support no-svg';
 
 ?>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="http://loopj.com/jquery-simple-slider/js/simple-slider.js"></script>
 </head>
 <?php
 /**

@@ -9,10 +9,10 @@
 *
 ***/
 
-@import url('http://www.hipotecarioseguros.com.ar/wp-content/themes/hoxa/css/colors/lightblue.css');
+@import url('http://hipotecarioseguros.com.ar/wp-content/themes/hoxa/css/colors/lightblue.css');
 .limit-width,.layout-boxed,.layout-boxed #header-one-page{max-width:1170px;}
 body{background-color: #EEEEEE;}
-body{background-image: url(http://www.hipotecarioseguros.com.ar/wp-content/themes/hoxa/images/patterns/bg0.png);}
+body{background-image: url(http://hipotecarioseguros.com.ar/wp-content/themes/hoxa/images/patterns/bg0.png);}
 a{text-decoration: default;}
 a:hover{text-decoration: default;}
 @font-face {
@@ -129,6 +129,13 @@ b,strong { font-family: "Brandon Grotesque Medium", "Open Sans"; }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
   .effHidden { visibility: visible; }
+}
+
+.logo a {
+	background-image: url("/wp-content/uploads/marca_encabezado.png");
+	background-repeat: no-repeat;
+	height: 46px;
+	width: 212px !important;
 }
 
 @media (min-width: 768px) and (max-width: 985px){.contenedor_0 { background-image: none; height: auto; }
